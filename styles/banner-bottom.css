@@ -1,0 +1,81 @@
+.banner-bottom {
+    position: relative;
+    z-index: 2;
+    padding: 0% 0% 6% 0%;
+    color: #fff;
+}
+.banner-bottom__wrapper {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    
+    align-items: center;
+}
+.benefits__banner-text-block {
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+    margin: 16px 0;
+     padding: 3% 19% 5% 19%;
+    border: 3px solid #EBB858;
+   
+}
+.benefits__banner-text {
+    text-align: center;
+    font-family: "EB Garamond", Sans-serif;
+    font-size: 1.563vw;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    
+}
+.cta-main.benefits-banner {
+    max-width: 31%;
+    width: 100%;
+    margin-top: -4%;
+}
+.banner-bottom__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@media (width <= 1023px) {
+    .banner-bottom {
+        padding: 0% 5% 10% 5%;
+    }
+    .banner-bottom__wrapper {
+        width: 100%;
+    }
+    .benefits__banner-text {
+        font-size: 2.3vw;
+    }
+    .benefits__banner-text-block {
+        padding: 3% 10% 5% 10%;
+    }
+    .cta-main.benefits-banner {
+        font-size: 2vw;
+                height: 6.5vw;
+                max-width: 52%;
+                margin-top: -6%;
+    }
+}
+
+@media (width <= 767px) {
+    .benefits__banner-text-block {
+        padding: 6% 6% 9% 6%;
+    }
+     .benefits__banner-text {
+        font-size: 4.5vw;
+    }
+    .cta-main.benefits-banner {
+        font-size: 4.5vw;
+        max-width: 90%;
+        height: 60px;
+        margin-top: -10%;
+    }
+}

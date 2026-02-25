@@ -1,0 +1,405 @@
+/* MEDIA START */
+
+.media {
+  position: relative;
+  overflow: hidden;
+  min-height: 110.0909vw;
+}
+
+.media__shape {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100vw;
+  height: 65.9722vw;
+  z-index: 0;
+}
+
+.media__shape-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.media__wrapper {
+  width: 73.6111vw;
+  margin: 0 auto;
+  padding-top: 4.4847vw;
+  padding-bottom: 6.0417vw;
+  position: relative;
+  z-index: 2;
+}
+
+.media__header {
+  width: 40.7174vw;
+  margin: 0 auto 3.3521vw;
+  text-align: center;
+}
+
+.media__title {
+  margin: 0px 0px 20px 0px;
+  color: #0e2242;
+  font-family: "Bebas Neue Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.media__featured {
+  margin: -0.2778vw 0 0;
+}
+
+.media__featured-label,
+.media__featured-list {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  line-height: 1.5632vw;
+}
+
+.media__featured-label {
+  color: #ebb858;
+}
+
+.media__featured-list {
+  color: #0e2242;
+}
+
+.media__content {
+  width: 73.6111vw;
+  display: grid;
+  grid-template-columns: 32.3979vw 35.7097vw;
+  gap: 3.9583vw;
+  align-items: start;
+}
+
+.media__lead {
+  margin: 0 0 1.4076vw;
+  max-width: 32.9743vw;
+  color: #0e2242;
+  font-weight: 500;
+  line-height: 2.032vw;
+}
+
+.media__card {
+  width: 32.3979vw;
+  min-height: 34.0917vw;
+  box-shadow: 0 0.2778vw 4.1667vw rgba(0, 0, 0, 0.04);
+  padding-bottom: 2.7021vw;
+  position: relative;
+}
+
+.media__video {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 18.2236vw;
+  overflow: hidden;
+}
+
+.media__video-image {
+  display: block;
+}
+
+.media__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.884vw;
+  height: 5.884vw;
+  border-radius: 50%;
+  background: #ebb858;
+}
+
+.media__play::before {
+  content: "";
+  position: absolute;
+  left: 54%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 0.832vw solid transparent;
+  border-bottom: 0.832vw solid transparent;
+  border-left: 1.4583vw solid #0e2242;
+}
+
+.media__logos {
+  margin-top: 3.0076vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.3417vw;
+}
+
+.media__logos img:first-child {
+  width: 7.8125vw;
+  height: 2.2396vw;
+  object-fit: contain;
+}
+
+.media__logos img:last-child {
+  width: 8.0729vw;
+  height: 1.9271vw;
+  object-fit: contain;
+}
+
+.media__card-text {
+  max-width: 26.3181vw;
+  margin: 1.3021vw auto 0;
+  text-align: center;
+  color: #0e2242;
+  font-weight: 400;
+  line-height: 2.2667vw;
+}
+
+.media__column {
+  position: relative;
+}
+
+.media__column--left-arrow {
+  position: absolute;
+  right: calc(100% + 4.5px);
+  bottom: 100%;
+}
+
+.media__column--left-arrow img {
+  width: 4.5vw;
+}
+
+.media__column--right {
+  padding-top: 6.4924vw;
+}
+
+.media__feature-image-wrap {
+  width: 35.7097vw;
+  height: 29.3035vw;
+}
+
+.media__feature-image {
+  display: block;
+}
+
+.media__feature-text {
+  max-width: 30.9208vw;
+  margin: 2.3146vw auto 0;
+  text-align: center;
+  color: #0e2242;
+  font-weight: 400;
+  line-height: 2.2667vw;
+}
+
+.media__spotlight {
+  width: 68.8528vw;
+  height: 52.3771vw;
+  margin: -5.6111vw auto -5.5vw;
+  z-index: 1;
+}
+
+.media__cta {
+  width: 25.7639vw;
+  max-width: none;
+  margin: 0 auto 0;
+}
+
+.media__pointer {
+  /* position: absolute; */
+  /* left: 50%;
+  bottom: 3.4722vw; */
+  /* transform: translateX(-50%); */
+  width: 1.4993vw;
+  height: 3.8736vw;
+  margin: 0 auto 2.638vw;
+  display: block;
+}
+
+.media__pointer img {
+  width: inherit;
+  height: inherit;
+}
+
+.media__bg {
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.media__bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media__bg-mobile {
+  display: none;
+}
+
+.media__spotlight img:first-child {
+  display: block;
+}
+
+.media__spotlight img:last-child {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .media__spotlight img:first-child {
+    display: none;
+  }
+
+  .media__spotlight img:last-child {
+    display: block;
+  }
+
+  .media__column--left-arrow {
+    right: inherit;
+    left: 0;
+    width: 18vw;
+    height: auto;
+    transform: translateY(50%);
+  }
+
+  .media__column--left-arrow img {
+    width: 100%;
+    height: auto;
+  }
+
+  .media__bg {
+    display: none;
+  }
+
+  .media__bg-mobile {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 220px;
+    width: 70px;
+    height: 116px;
+    z-index: 111;
+  }
+
+  .media {
+    min-height: auto;
+    padding: 12.8205vw 2.5641vw 15.3846vw;
+  }
+
+  .media__shape,
+  .media__pointer {
+    display: none;
+  }
+
+  .media__wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .media__header {
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+
+  .media__title {
+    font-size: 10vw;
+    line-height: 1;
+  }
+
+  .media__featured-label,
+  .media__featured-list {
+    font-size: 6vw;
+    line-height: 1.2em;
+  }
+
+  .media__content {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 7.6923vw;
+    margin-bottom: 7vw;
+  }
+
+  .media__lead {
+    max-width: 100%;
+    margin-bottom: 5vw;
+    line-height: 1.2em;
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .media__card,
+  .media__feature-image-wrap {
+    width: 100%;
+  }
+
+  .media__video {
+    height: auto;
+    aspect-ratio: 467 / 262;
+  }
+
+  .media__play {
+    width: 15.3846vw;
+    height: 15.3846vw;
+  }
+
+  .media__play::before {
+    border-top-width: 2.0513vw;
+    border-bottom-width: 2.0513vw;
+    border-left-width: 3.3333vw;
+  }
+
+  .media__logos {
+    margin-top: 5.1282vw;
+    gap: 5.1282vw;
+  }
+
+  .media__logos img:first-child {
+    width: 26.6667vw;
+    height: auto;
+  }
+
+  .media__logos img:last-child {
+    width: 27.6923vw;
+    height: auto;
+  }
+
+  .media__card-text,
+  .media__feature-text {
+    max-width: 100%;
+    line-height: 6.6667vw;
+    font-size: 5.5vw;
+    padding: 0 4.4vw;
+    margin-top: 5vw;
+  }
+
+  .media__feature-text {
+    margin-top: 7.5vw;
+  }
+
+  .media__column--right {
+    padding-top: 0;
+  }
+
+  .media__feature-image-wrap {
+    height: auto;
+    aspect-ratio: 514 / 422;
+  }
+
+  .media__cta {
+    width: inherit;
+    margin-top: 10.2564vw;
+  }
+
+  .media__bg {
+    opacity: 0.12;
+  }
+
+  .media__spotlight {
+    width: calc(100% - 20px);
+    bottom: 70px;
+    top: inherit;
+  }
+}
+
+@media (min-width: 768px) {
+  .list__achievement-text br {
+    display: none;
+  }
+}

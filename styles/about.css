@@ -1,0 +1,136 @@
+/* ABOUT START */
+
+.about {
+  padding: 5.556vw 2.5% 0;
+  overflow: hidden;
+}
+
+.about__wrapper {
+  width: 73.6111vw;
+  margin: 0 auto;
+}
+
+.about__image-wrap {
+  width: 73.6111vw;
+  height: 32.8757vw;
+  position: relative;
+}
+
+.about__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.about__pointer {
+  position: absolute;
+  left: 48.9811%;
+  top: 90.7909%;
+  transform: translateX(-50%);
+  width: 1.4993vw;
+  height: 3.8736vw;
+}
+
+.about__content {
+  margin-top: 4.4431vw;
+  text-align: center;
+}
+
+.about__subtitle {
+  max-width: 56vw;
+  margin: 0 auto;
+  color: #0e2242;
+  font-family: "Bebas Neue Pro", sans-serif;
+  font-size: 4.1701vw;
+  font-weight: 700;
+}
+
+.about__title {
+  margin-top: -0.2778vw;
+  color: #0e2242;
+  font-family: "Bebas Neue Pro", sans-serif;
+  font-size: 4.1701vw;
+  font-weight: 700;
+}
+
+.about__title-line {
+  display: block;
+}
+
+.about__title-line:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.2778vw;
+}
+
+.about__title-line:last-child {
+  margin-top: 0.3472vw;
+}
+
+.about__rank {
+  position: relative;
+  color: #9d6b29;
+  font-size: 4.1701vw;
+  padding-bottom: 0.3472vw;
+
+  text-decoration-color: #0e2242;
+}
+
+.about__rank::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8%;
+  background: url("data:image/svg+xml;base64,ICA8c3ZnIHdpZHRoPSIxMTQiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDExNCA1IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICA8cmVjdCB3aWR0aD0iMTEzLjA2IiBoZWlnaHQ9IjUiIGZpbGw9InVybCgjcGF0dGVybjBfMV8yNikiLz4KICA8ZGVmcz4KICA8cGF0dGVybiBpZD0icGF0dGVybjBfMV8yNiIgcGF0dGVybkNvbnRlbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogIDx1c2UgeGxpbms6aHJlZj0iI2ltYWdlMF8xXzI2IiB0cmFuc2Zvcm09Im1hdHJpeCgwLjAwNTM3NjM0IDAgMCAwLjEyMTU3IDAgMC4xOTYwNzUpIi8+CiAgPC9wYXR0ZXJuPgogIDxpbWFnZSBpZD0iaW1hZ2UwXzFfMjYiIHdpZHRoPSIxODYiIGhlaWdodD0iNSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFMb0FBQUFGQ0FZQUFBRHlrdlpSQUFBRzUwbEVRVlI0QWJTV2YyeGtWUlhIenozM3ZlbDBmMEJYWStJL3JpT1lkY0dVTFdLTW9Oa1pReUFTSXExdUJERnFadzBSbExDZHhtUVJDYTJqNHNvbU9rWEZINHM2dzdxSlNMSnBpei93SDUzWkpXRVRZMndYWEFHamROck5hb3pJTHZUWHpIdnYzdXY1dnVsclgwdVgvNWpNWjg2dmUrK2NlOTU1OXoybU4rSHpvN3QyNTlMOHNyUTdCMzV4ejY0OXYvcnlGWHZUL1BiKzNyMEp2eS8zOWYvaHdiN2k4WU5YM3BMb3NEZmp6ei80OElGbnhxNGR1UmgvK3Q2SEtvaEJUaC9KVndIMHZ6eXk5M05uYWplTVFJY3ZBYjZOdkhqc3BwRTBNMDk4Yk9SaS9LMTZZK1hjazUrb3poN3ZyMEp1NUQrLzJWY0ZMei8xeVNxQW51YmZ2OTVYQjJmSCsrdHBacDY0dVo3bW40L2ZOQU5iOHBwNi91Z045UVRZWjJvM2p2KzFlbjBWVEQ5YXFHK0cxSzJlNXBuS3RWT25LaCtzb3c2UVR4Lyt3RGg4a0kxRDExUWhUeDUrZngwOExiRS9mcU92bnViSnIvYU9ZOXhURCt5cEo0emYyMXY5M1FON1JoQ2J2UGVxSWVpVDkxMVZnVDV4WCs5SW11TUhlMk0vWXNlRzN6dUlhNS8wQ2V5ZjMvMmUvcVJmNEVjZnBYc0x2cDk4NGJLZEFINjBjNldVNjBsMDJDQnU5TkpBcnFkODY4N0JiOTZhT3dnT2ZmcXk2cUZQNWVyZnVpMDNOVmE4L1B5M2I4L05mSGZ3Y2dkZ2d4L2VzY3VCSTNmdWN1RFJ1M2E3bjMycFE3ZFBNMkI3bG1lQTBqd0QvSXczN1dsOUFtUzcvQk1nY3VvRVVPSzNoaWJhYmFwZXNpMHpxUlZOaUYxbHhhdDQ3RldCNy92VnBhWDJ3MUVRbFlHenJneVVvN0xISENPYksyVjhyOHlhUzBFcktrYWhMWHErVnlKV2o0WHRzTnpWM1ZWU1NoYzk3Y1U0WTh1S2FBTk83QTdhNDdLeGRoVlp2d3kwMW1YUTg1WnRKV3Rza1ZrVklTV1hJbUJtV1Y4WFNYR01VNm9JMkZ2eldWSVNVd1haUTBHekxoQ3BHR2RWUVd0ZmRGN0ZFZWVNcFlMazA0ZXhDU2FLK2hTNUFhbFhrU3dWTTc1ZjhHUXRSVndBNGl2WXlCVlk2d0lwdFlxbnVVL3lMeXd2QmtXUy8yV1BCNXh6ZlpDc3VlaGtUV2VvWUNKYmlLSm9RR2xaVHpDT0N0QzNiZUZyV3Eyb29KaHlDVmlUbWZiN21uc3lHVFhRRHV5N3JIVTlqdDJsMmF3K1BiL1FubVM3V0FQN0RqODNyR2hoZktrZFRGNlNXYTRIZ1gzMnM5Ly8rK25idnZQOHljOVV6anoyK1VkZW5JUnVqWnQ3V1FlemtiR1hrbnkrK09NWG1xMXM2d0o4ZHg1NWFRN0FKeUVhSG10ZVNIVFlnQ3Qzdkx2dzltNmEwb3BycE9naHdFUnl3VmlLekgzV2tTU3JjeGdNdEZZOUdVLzNHR2RoeGlqWllheGM1Q2N5cnc5RTBkcjgxMGZYZXpCV0x1QjZwMWphMHdSRWxmNVZFR1NrQzJKRmZ1eUt6cHFKcGZMaUV0a1pCeDBZMlNBa3hpVGpZWHV5Tm1RYXU4bEdqT2xzRGprbUpkSE04VFJwQkpJYmlLeHpzYjNaejhhWXNaMjZKR3U1Uk5rd09aMUxKSG1sODhWZXd0Q1FXZG5iaHFsU2cwNStHLzBYczVWV1V0KzFPZGdyclh5TVZlL1FXdVVTckZPNWJGWkozNmljM05BRktVOHVtK0djTHplSHAzaC8ySFpmMjdHOWUwTHA3Wk9PdHczajFDZTk5V0ZGYXVpMW9Qc2pyTlhPWTNLeTQ0Ui92SFJGSlFIeHQ2bXQvWTY4L0k2c0dzSlQ0NjFoOWdEQWVIRDBuaXNQSkRKNUVpUW5mcHk5MVBZQ3BUNmg2UlFicmpCY3UwaStwK0FpTkxuY0dMRXVOWTdsRy8xNCtvMmlSTDdIRktZYVA0eld4cU9vbnNUdEpoZmN5SjhEakxZcnphUTFyMnQyeE5MSXlaSTJWM1UwT2N2Y1ZZY29hQ0FSOFJlTnhadHNoTGxURXd4U1RKUk9FMDJPWmtjc3djcFJtT2lRck5ibXc5WXNpMEJaQVljSTgvb3hHM1B4Sks5MXVjcjEweklIWUJrbkZ4Z3l3WXB0WlF6c3lOanB5TnJScm93L0NGckxyZjNkWFpuQitmbldnTE5SUG9HVXlUTzcvTkppbUpkVE9oKzBPelprWWtQZnVrWEZNV2RNSGlobEI4TmdmdENhK1R4ME9ibUhvQzhzdFQrdTdFTGwzQ3ZoOE9KU09LdzBqZS9Zd2pQSXlXYzcwNHJDS2ZoQXBIZ2FJTWFlZW5VcHRJM3pDOEVFWi9Sc1JPNTBFRVFYL2p2Zm52M2ZjdkFzWkdUTnJNK3UrY3FpbTF0cVIrZHgydlB3VC8vUkNKMGRrL0pPU3o4MWdkekFEV3R0UTA2VHBweVEwL0lIRFJCR3JyRzRGRFUxcnFnNDhFMmFsR1VCMkFtZVhuTklQeWJ1VGFVOFVwdWFWSk9WVzhVWUovL3RtcHJkV1dkTmpESGhXVC9yU3o1Tzh1bmcrN3JCaW1La3pSckdtRGdHeWF3YTVHU2NZTVV2UldwQUVsUERrVjFGKzl5UTRqUmtXNnNZYTJJZEV2Z1ozUWlEb0NIYmlpR1pEMnc4enNsWUYvOHZhWjRJSTFOemltS3N0VFZBenRaa2JveHlyaWJOV29NUElBNlNlZGE2bWlNWEkvdVFKNjJxRVZHTVpoNzFNLzZvaWV5b0k1V0NSaDNSS0dndHQ0ZUNWamdJVEJBTjJzakd5S05sY1A3VjEvS0w4d3Q1MHNIVi81bzc5ODdyaGs5ZGZWM3AxTmZmZC9mSm8rRDYrNmRya0I4ZG5aN01mMlhxNUVadWZ2QzUyTGVaVFB1Z0o5enkwRXR6QURaZVE2RGZQdlpDRXhLdkdORGhUK0xRMCtBVkpnMWVad0I4a0FCOW5BQWJyejlZRzAxT1JQUi9BQUFBLy84SG42eU1BQUFBQmtsRVFWUURBT3A3TUFYNEtJLy9BQUFBQUVsRlRrU3VRbUNDIi8+CiAgPC9kZWZzPgogIDwvc3ZnPg==")
+    no-repeat center / 100% 100%;
+}
+
+.about__rank::before {
+  width: 100%;
+  height: 4%;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.92vw;
+  background-color: #0e2242;
+}
+
+@media (max-width: 768px) {
+  .about__title,
+  .about__rank {
+    font-size: 10vw;
+    line-height: 1;
+  }
+
+  .about__wrapper {
+    width: 100%;
+  }
+
+  .about__wrapper br {
+    display: none;
+  }
+
+  .about__image-wrap {
+    width: 130%;
+    margin-left: -15%;
+    margin-right: -15%;
+    height: auto;
+  }
+
+  .about__pointer {
+    height: 12.8vw;
+    width: 5vw;
+  }
+
+  .about__content {
+    margin-top: 18vw;
+  }
+
+  .about__pointer {
+    top: 97%;
+  }
+}

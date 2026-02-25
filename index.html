@@ -1,0 +1,1285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo" href="#" aria-label="Zenith Prep Academy Home">
+          <img
+            src="./images/logo-header-image.png"
+            alt="Zenith Prep Academy logo"
+          />
+        </a>
+
+        <div class="header__media">
+          <p class="header__media-label">AS SEEN ON</p>
+          <ul class="header__image-list" aria-label="Featured media logos">
+            <li class="header__image-item header__image-item--1">
+              <img src="./images/f-image-1.png" alt="" />
+            </li>
+            <li class="header__image-item header__image-item--2">
+              <img src="./images/f-image-2.png" alt="" />
+            </li>
+            <li class="header__image-item header__image-item--3">
+              <img src="./images/f-image-3.png" alt="" />
+            </li>
+            <li class="header__image-item header__image-item--4">
+              <img src="./images/f-image-4.png" alt="" />
+            </li>
+            <li class="header__image-item header__image-item--5">
+              <img src="./images/f-image-5.png" alt="" />
+            </li>
+            <li class="header__image-item header__image-item--6">
+              <img src="./images/f-image-6.png" alt="" />
+            </li>
+          </ul>
+        </div>
+
+        <button class="header__burger" type="button" aria-label="Open menu">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+
+        <a href="#" class="header__cta cta-main">BOOK A FREE CONSULTATION</a>
+      </div>
+
+      <div class="header__bottom">
+        <p class="header__bottom-text">Ranked #1 in Education on USA Today</p>
+      </div>
+
+      <div class="burger-menu" id="burgerMenu" aria-hidden="true">
+        <div class="burger-menu__overlay" data-menu-close></div>
+
+        <aside
+          class="burger-menu__panel"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Site navigation"
+        >
+          <button
+            class="burger-menu__close"
+            type="button"
+            data-menu-close
+            aria-label="Close menu"
+          >
+            <span class="burger-menu__close-line"></span>
+            <span class="burger-menu__close-line"></span>
+          </button>
+
+          <nav class="burger-menu__nav" aria-label="Main menu">
+            <ul class="burger-menu__list">
+              <li class="burger-menu__item">
+                <button
+                  class="burger-menu__toggle"
+                  type="button"
+                  data-dropdown-toggle
+                  aria-expanded="false"
+                >
+                  Admissions Guarantee
+                  <span class="burger-menu__chevron" aria-hidden="true">
+                    <svg
+                      aria-hidden="true"
+                      class="e-font-icon-svg e-fas-caret-down"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="burger-menu__submenu" data-dropdown-content>
+                  <a href="#" class="burger-menu__submenu-link">Guarantee</a>
+                  <a href="#" class="burger-menu__submenu-link"
+                    >Top 25 + Ivy League Program</a
+                  >
+                </div>
+              </li>
+
+              <li class="burger-menu__item">
+                <button
+                  class="burger-menu__toggle"
+                  type="button"
+                  data-dropdown-toggle
+                  aria-expanded="false"
+                >
+                  Results &amp; Reviews
+                  <span class="burger-menu__chevron" aria-hidden="true">
+                    <svg
+                      aria-hidden="true"
+                      class="e-font-icon-svg e-fas-caret-down"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="burger-menu__submenu" data-dropdown-content>
+                  <a href="#" class="burger-menu__submenu-link"
+                    >Student Success Stories</a
+                  >
+                  <a href="#" class="burger-menu__submenu-link"
+                    >Parent Testimonials</a
+                  >
+                </div>
+              </li>
+
+              <li class="burger-menu__item">
+                <button
+                  class="burger-menu__toggle"
+                  type="button"
+                  data-dropdown-toggle
+                  aria-expanded="false"
+                >
+                  How We Get You In
+                  <span class="burger-menu__chevron" aria-hidden="true">
+                    <svg
+                      aria-hidden="true"
+                      class="e-font-icon-svg e-fas-caret-down"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="burger-menu__submenu" data-dropdown-content>
+                  <a href="#" class="burger-menu__submenu-link"
+                    >Roadmap &amp; Strategy</a
+                  >
+                  <a href="#" class="burger-menu__submenu-link"
+                    >Application Positioning Plan</a
+                  >
+                </div>
+              </li>
+
+              <li class="burger-menu__item">
+                <button
+                  class="burger-menu__toggle"
+                  type="button"
+                  data-dropdown-toggle
+                  aria-expanded="false"
+                >
+                  Tuition &amp; Financial Aid
+                  <span class="burger-menu__chevron" aria-hidden="true">
+                    <svg
+                      aria-hidden="true"
+                      class="e-font-icon-svg e-fas-caret-down"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="burger-menu__submenu" data-dropdown-content>
+                  <a href="#" class="burger-menu__submenu-link"
+                    >Program Pricing Overview</a
+                  >
+                  <a href="#" class="burger-menu__submenu-link"
+                    >Payment Options Example</a
+                  >
+                </div>
+              </li>
+
+              <li class="burger-menu__item">
+                <button
+                  class="burger-menu__toggle"
+                  type="button"
+                  data-dropdown-toggle
+                  aria-expanded="false"
+                >
+                  About
+                  <span class="burger-menu__chevron" aria-hidden="true">
+                    <svg
+                      aria-hidden="true"
+                      class="e-font-icon-svg e-fas-caret-down"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="burger-menu__submenu" data-dropdown-content>
+                  <a href="#" class="burger-menu__submenu-link"
+                    >Our Mission &amp; Values</a
+                  >
+                  <a href="#" class="burger-menu__submenu-link"
+                    >Team &amp; Experience</a
+                  >
+                </div>
+              </li>
+
+              <li class="burger-menu__item burger-menu__item--plain">
+                <a href="#" class="burger-menu__private-link"
+                  >PRIVATE CLIENT GROUP</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+    </header>
+    <main>
+        <section class="hero">
+        <div class="hero__wrapper">
+          <div class="hero__inner">
+            <h1 class="hero__subtitle">
+              Afraid of Making a Critical College Admissions Mistake?
+            </h1>
+            <h2 class="hero__title">
+              Your Child is 8X More Likely to Stand Out, Even Against Perfect
+              GPA Applicants…
+            </h2>
+            <div class="hero__text-wrapper">
+              <p class="hero__text text-m">
+                If after your first strategy session as a client, you aren’t
+                100% confident that we can help your child stand out and give
+                them the best possible shot at their dream school, you risk
+                nothing.
+              </p>
+            </div>
+            <a href="#" class="cta-main hero-cta">BOOK A FREE CONSULTATION</a>
+          </div>
+          <div class="hero__images-absolute">
+            <div class="hero__ranked-image">
+              <img src="./images/ranked-img.webp" alt="" />
+            </div>
+            <div class="hero__logos-image">
+              <img src="./images/hero-image.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="hero__bg">
+          <img src="./images/hero-bg.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__wrapper">
+          <div class="about__image-wrap">
+            <img
+              src="./images/about-main-image.png"
+              alt="Zenith awards and rankings"
+              class="about__image"
+            />
+            <span class="about__pointer" aria-hidden="true">
+              <img src="./images/about-arrow.svg" alt="" />
+            </span>
+          </div>
+
+          <div class="about__content">
+            <h2 class="about__title">
+              Zenith has been ranked numerous times as<br />
+              <span class="about__rank">the #1</span>
+              College Consulting &amp; Education<br />
+              Company in America
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="cards">
+        <div class="cards__wrapper">
+          <div class="cards__header">
+            <img
+              src="./images/list-image-top.png"
+              alt="Featured universities"
+              class="cards__header-image"
+            />
+          </div>
+
+          <div class="cards__grid">
+            <div class="cards__item">
+              <img
+                src="./images/badge-1.png"
+                alt="Card 1"
+                class="cards__image"
+              />
+            </div>
+            <div class="cards__item">
+              <img
+                src="./images/badge-2.png"
+                alt="Card 2"
+                class="cards__image"
+              />
+            </div>
+            <div class="cards__item">
+              <img
+                src="./images/badge-3.png"
+                alt="Card 3"
+                class="cards__image"
+              />
+            </div>
+            <div class="cards__item">
+              <img
+                src="./images/badge-4.png"
+                alt="Card 4"
+                class="cards__image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="growth">
+        <div class="growth__bg-shape" aria-hidden="true">
+          <svg
+            class="growth__bg-svg"
+            width="1440"
+            height="950"
+            viewBox="0 0 1440 950"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M-0.650024 893V950H1440.65V0L-0.650024 893Z"
+              fill="#F9F9F9"
+            />
+          </svg>
+        </div>
+
+        <div class="growth__wrapper">
+          <div class="growth__intro">
+            <p class="growth__intro-text">
+              Thousands of happy families have put us on the Inc. 5000 list
+              of<br />fastest growing companies in America
+              <strong>4 years IN A ROW</strong>
+            </p>
+          </div>
+
+          <div class="growth__achievements">
+            <div class="growth__achievement growth__achievement--left">
+              <p class="growth__achievement-rank">9ᵗʰ fastest-growing</p>
+              <p class="growth__achievement-desc">
+                private company in Education (2022)
+              </p>
+            </div>
+
+            <div class="growth__achievement-logo">
+              <img
+                src="./images/growth-image-top.png"
+                alt="Inc 5000"
+                class="growth__logo-image"
+              />
+            </div>
+
+            <div class="growth__achievement growth__achievement--right">
+              <p class="growth__achievement-rank">15ᵗʰ fastest-growing</p>
+              <p class="growth__achievement-desc">
+                private company in Education (2023)
+              </p>
+            </div>
+          </div>
+
+          <div class="growth__main-image">
+            <img
+              src="./images/growth-image-main.png"
+              alt="Inc 5000 ranking showcase"
+              class="growth__image"
+            />
+          </div>
+
+          <div class="growth__bottom-image">
+            <img
+              src="./images/growth-image-bottop.png"
+              alt="Inc 5000 logo"
+              class="growth__image"
+            />
+
+            <img src="./images/growth-bot-mobile.png" alt="" />
+          </div>
+
+          <span class="growth__pointer" aria-hidden="true">
+            <img src="./images/about-arrow.svg" alt="" />
+          </span>
+        </div>
+
+        <div class="growth__bg">
+          <img
+            src="./images/growth-bg-image.png"
+            alt=""
+            class="growth__bg-image"
+          />
+        </div>
+      </section>
+
+      <section class="media">
+        <div class="media__wrapper">
+          <div class="media__header">
+            <h2 class="media__title title-xl">Interviews</h2>
+            <p class="media__featured text-m">
+              <span class="media__featured-label">Featured on</span>
+              <span class="media__featured-list"
+                >USA Today, Forbes, Bloomberg, Nasdaq, Apple News</span
+              >
+            </p>
+          </div>
+
+          <div class="media__content">
+            <article class="media__column media__column--left">
+              <p class="media__lead text-m">
+                Here we are in Times Square in New York City being interviewed
+                and aired on Nasdaq and Bloomberg TV!
+              </p>
+
+              <div class="media__card">
+                <a
+                  class="media__video"
+                  href="#"
+                  aria-label="Watch Zenith interview in Times Square"
+                >
+                  <img
+                    src="https://placehold.co/467x262"
+                    alt="Zenith interview in Times Square"
+                    class="media__video-image"
+                  />
+                  <span class="media__play" aria-hidden="true"></span>
+                </a>
+
+                <div class="media__logos" aria-label="Featured media partners">
+                  <img src="./images/media-icon-1.png" alt="Nasdaq logo" />
+                  <img src="./images/media-icon-2.png" alt="Bloomberg logo" />
+                </div>
+
+                <p class="media__card-text text-m">
+                  Sharing our knowledge to millions of people across the United
+                  States on what universities are looking for in their
+                  applicants today!
+                </p>
+                <div class="media__column--left-arrow">
+                  <img src="./images/media-arrow.svg" alt="" />
+                </div>
+              </div>
+            </article>
+
+            <article class="media__column media__column--right">
+              <div class="media__feature-image-wrap">
+                <img
+                  src="./images/media-right-image.png"
+                  alt="Zenith at the USA Today office in Los Angeles"
+                  class="media__feature-image"
+                />
+              </div>
+              <p class="media__feature-text text-m">
+                And here’s us over in Los Angeles at the USA Today office
+                sharing our expertise in college admissions.
+              </p>
+            </article>
+          </div>
+
+          <div class="media__spotlight" aria-hidden="true">
+            <img
+              src="./images/media-main-image.png"
+              alt=""
+              class="media__spotlight-image"
+            />
+
+            <img src="./images/media__bot-mobile.png" alt="" />
+          </div>
+
+          <span class="media__pointer" aria-hidden="true">
+            <img src="./images/about-arrow.svg" alt="" />
+          </span>
+          <a href="#" class="cta-main media__cta">BOOK A FREE CONSULTATION</a>
+        </div>
+
+        <div class="media__bg" aria-hidden="true">
+          <img src="./images/media-bg.png" alt="" class="media__bg-image" />
+        </div>
+        <div class="media__bg-mobile" aria-hidden="true">
+          <img
+            src="./images/media__bg-mobile.png"
+            alt=""
+            class="media__bg-image"
+          />
+        </div>
+      </section>
+
+      <!-- List Section -->
+      <section class="list">
+        <div class="list__wrapper">
+          <div class="list__header">
+            <h2 class="list__title">Our Proven Track Record</h2>
+            <p class="list__intro text-m">
+              In a recent admissions cycle, Zenith Prep Academy had:
+            </p>
+          </div>
+
+          <ul class="list__achievements">
+            <li class="list__achievement">
+              <svg
+                class="list__check"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_541)">
+                  <mask
+                    id="mask0_1_541"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      d="M19.9319 0.526367H0.93338V19.4737H19.9319V0.526367Z"
+                      fill="white"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_1_541)">
+                    <path
+                      d="M19.2142 4.12426C19.6918 3.54161 19.6914 2.59742 19.2134 2.01534C18.7354 1.43328 17.9607 1.43375 17.4833 2.0164L6.11436 15.8881L3.30969 12.4694C2.83192 11.887 2.05731 11.887 1.57954 12.4694C1.10178 13.0517 1.10178 13.9959 1.57954 14.5783L5.24973 19.0519C5.47924 19.3317 5.79053 19.4889 6.1151 19.4888C6.43967 19.4887 6.75091 19.3313 6.9803 19.0514L19.2142 4.12426Z"
+                      fill="#0E2242"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_541">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="list__achievement-text text-m">
+                500% higher acceptance into Ivy League and Top 15 Universities
+                <em
+                  >(including Stanford, Harvard, Princeton, Yale, Caltech, MIT,
+                  Johns Hopkins, University of Chicago, Duke, and more)</em
+                >
+              </div>
+            </li>
+
+            <li class="list__achievement">
+              <svg
+                class="list__check"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_549)">
+                  <mask
+                    id="mask0_1_549"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      d="M19.9319 0.526367H0.93338V19.4737H19.9319V0.526367Z"
+                      fill="white"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_1_549)">
+                    <path
+                      d="M19.2142 4.12426C19.6918 3.54161 19.6914 2.59742 19.2134 2.01534C18.7354 1.43328 17.9607 1.43375 17.4833 2.0164L6.11436 15.8881L3.30969 12.4694C2.83192 11.887 2.05731 11.887 1.57954 12.4694C1.10178 13.0517 1.10178 13.9959 1.57954 14.5783L5.24973 19.0519C5.47924 19.3317 5.79053 19.4889 6.1151 19.4888C6.43967 19.4887 6.75091 19.3313 6.9803 19.0514L19.2142 4.12426Z"
+                      fill="#0E2242"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_549">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="list__achievement-text text-m">
+                8x higher acceptance into Top 25 Universities compared to the
+                national average
+              </div>
+            </li>
+
+            <li class="list__achievement">
+              <svg
+                class="list__check"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_557)">
+                  <mask
+                    id="mask0_1_557"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      d="M19.9319 0.526367H0.93338V19.4737H19.9319V0.526367Z"
+                      fill="white"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_1_557)">
+                    <path
+                      d="M19.2142 4.12426C19.6918 3.54161 19.6914 2.59742 19.2134 2.01534C18.7354 1.43328 17.9607 1.43375 17.4833 2.0164L6.11436 15.8881L3.30969 12.4694C2.83192 11.887 2.05731 11.887 1.57954 12.4694C1.10178 13.0517 1.10178 13.9959 1.57954 14.5783L5.24973 19.0519C5.47924 19.3317 5.79053 19.4889 6.1151 19.4888C6.43967 19.4887 6.75091 19.3313 6.9803 19.0514L19.2142 4.12426Z"
+                      fill="#0E2242"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_557">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="list__achievement-text text-m">
+                90%+ accepted into a Top 50 University
+              </div>
+            </li>
+
+            <li class="list__achievement">
+              <svg
+                class="list__check"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_565)">
+                  <mask
+                    id="mask0_1_565"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      d="M19.9319 0.526367H0.93338V19.4737H19.9319V0.526367Z"
+                      fill="white"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_1_565)">
+                    <path
+                      d="M19.2142 4.12426C19.6918 3.54161 19.6914 2.59742 19.2134 2.01534C18.7354 1.43328 17.9607 1.43375 17.4833 2.0164L6.11436 15.8881L3.30969 12.4694C2.83192 11.887 2.05731 11.887 1.57954 12.4694C1.10178 13.0517 1.10178 13.9959 1.57954 14.5783L5.24973 19.0519C5.47924 19.3317 5.79053 19.4889 6.1151 19.4888C6.43967 19.4887 6.75091 19.3313 6.9803 19.0514L19.2142 4.12426Z"
+                      fill="#0E2242"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_565">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="list__achievement-text text-m">
+                98%+ accepted into a Top <br />100 University
+              </div>
+            </li>
+          </ul>
+
+          <div class="list__stats">
+            <div class="list__stat">
+              <div class="list__stat-number">17+</div>
+              <div class="list__stat-label text-m">
+                years in<br />the business
+              </div>
+            </div>
+
+            <div class="list__stat">
+              <div class="list__stat-number">Thousands</div>
+              <div class="list__stat-label text-m">
+                of students have<br />worked with us
+              </div>
+            </div>
+
+            <div class="list__stat">
+              <div class="list__stat-number">40+</div>
+              <div class="list__stat-label text-m">
+                states we have<br />students in
+              </div>
+            </div>
+          </div>
+
+          <img class="list__decoration" src="./images/hp-zpa.png.png" alt="" />
+          <img
+            class="list__decoration list__decoration-mobile"
+            src="./images/list__decoration-mobile.png"
+            alt=""
+          />
+        </div>
+
+        <div class="list__bg">
+          <img src="./images/bgbg.jpg" alt="" />
+        </div>
+      </section>
+
+
+
+  <section class="video">
+    <div class="video__wrapper">
+      <div class="video__inner">
+        <h2 class="video__title">Can THOUSANDS of Parents Be wrong?</h2>
+        <p class="video__text">Hear What Parents Just like YOU Think About us</p>
+      </div>
+      <div class="video__container">
+        <div class="video-thumbnail">
+          <img src="./images/video-thumbnail.jpg" alt="">
+        </div> 
+        <div class="video__play-btn">
+         <svg class="video__play-icon" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <circle 
+    class="play-circle"
+    cx="500" 
+    cy="500" 
+    r="470"
+    fill="none"
+    stroke-width="70"
+  />
+
+  <path 
+    class="play-arrow"
+    d="M438 392V642L642 517 438 392Z"
+  />
+
+</svg>
+        </div>
+      </div>
+      <div class="video__mobile-text">
+        <p>Watch a real Zenith parent capturing the moment their child is accepted into the Ivy League university of her dreams</p>
+      </div>
+    </div>
+  </section>
+
+
+      <section class="benefits">
+        <div class="benefits__wrapper">
+          <!-- <div class="benefits__iframe-wrapper">
+           <iframe src="https://meetings.hubspot.com/zprep-academy/ic-initial-consultation-website-facebook?embed=true&amp;parentHubspotUtk=365cdd0a833484f32bd58f1bf07eaa82&amp;parentPageUrl=https://apply.zenithprepacademy.com/" width="100%" data-hs-ignore="true" style="min-width: 312px; min-height: 615px; height: 715px; border: none;" data-gtm-yt-inspected-8="true" data-gtm-yt-inspected-12853482_243="true"></iframe>
+          </div> -->
+           <div class="benefits__inner">
+            <h3 class="benefits__subtitle text-m">Please be aware that these consultations are NOT sales meetings</h3>
+            <h2 class="benefits__title">Speak to our Admissions Counseling<br> Department who have a combined 100+ years of <br>experience and careers within the education field</h2>
+            <div class="benefits__list-figures">
+                 <div class="benefits__item-container">
+                  <figure class="benefits__figure">
+                  <img src="./images/kevin-hong.jpeg" alt="">
+                   <figcaption class="benefits__figcaption">Kevin Hong</figcaption>
+                 </figure>
+                 </div>
+                 <div class="benefits__item-container">
+                 <figure class="benefits__figure">
+                  <img src="./images/sydney.jpeg" alt="">
+                   <figcaption class="benefits__figcaption">Sydney Locklear</figcaption>
+                 </figure>
+                  </div>
+                  <div class="benefits__item-container">
+                 <figure class="benefits__figure">
+                  <img src="./images/blake.jpeg" alt="">
+                   <figcaption class="benefits__figcaption">Blake Keats</figcaption>
+                 </figure>
+                 </div>
+                 <div class="benefits__item-container">
+                 <figure class="benefits__figure">
+                  <img src="./images/bailey.webp" alt="">
+                   <figcaption class="benefits__figcaption">Bailey Jeffko</figcaption>
+                 </figure>
+                 </div>
+                 <div class="benefits__item-container">
+                 <figure class="benefits__figure">
+                  <img src="./images/ian.jpeg" alt="">
+                   <figcaption class="benefits__figcaption">Ian Collis</figcaption>
+                 </figure>
+                 </div>
+                 <div class="benefits__item-container">
+                 <figure class="benefits__figure">
+                  <img src="./images/kayla.jpeg" alt="">
+                   <figcaption class="benefits__figcaption">Kayla Lewis</figcaption>
+                 </figure>
+                 </div>
+                 <div class="benefits__item-container">
+                  <figure class="benefits__figure">
+                  <img src="./images/liddy.jpg" alt="">
+                   <figcaption class="benefits__figcaption">Liddy Lackner</figcaption>
+                 </figure>
+                 </div>
+                 <div class="benefits__item-container">
+                  <figure class="benefits__figure"> 
+                  <img src="./images/tamara.jpeg" alt="">
+                   <figcaption class="benefits__figcaption">Tamara Timmons</figcaption>
+                 </figure>
+                 </div>
+                 <div class="benefits__item-container">
+                 <figure class="benefits__figure"> 
+                  <img src="./images/stacy.jpg" alt="">
+                   <figcaption class="benefits__figcaption">Stacy Lee</figcaption>
+                 </figure>
+                 </div>
+                 <div class="benefits__item-container">
+                 <figure class="benefits__figure"> 
+                  <img src="./images/daniel.jpeg" alt="">
+                   <figcaption class="benefits__figcaption">Daniel Abarca</figcaption>
+                 </figure>
+                 </div>
+                 <div class="benefits__item-container">
+                  <figure class="benefits__figure"> 
+                  <img src="./images/kristim.jpeg" alt="">
+                   <figcaption class="benefits__figcaption">Kristin Cosgrove</figcaption>
+                 </figure>
+                 </div>
+                 <div class="benefits__item-container">
+                 <figure class="benefits__figure"> 
+                  <img src="./images/kelly.jpeg" alt="">
+                   <figcaption class="benefits__figcaption">Kelly Conniff</figcaption>
+                 </figure>
+                 </div>
+            </div>
+            <p class="benefits__text">Our Admissions Counseling team members are NOT paid on commission,<br><b>so you can feel comfortable knowing that when you’re meeting with us,
+             our main objective is to provide you with unbiased, fact–based answers and a proper roadmap for your child.</b> Hence why these meetings are so popular.</p>
+           </div>
+           <div class="benefits__list-container">
+              <div class="benefits__left">
+                <h2 class="benefits__title-left">During your personalized consultation, we will discuss:</h2>
+                <div class="benefits__icon-list">
+                   <ul class="benefits-ul">
+                     <li class="benefits-li">
+                       <span class="benefits-icon-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none"><g clip-path="url(#clip0_1789_31508)"><path d="M18.2535 3.4179C18.7072 2.86438 18.7068 1.9674 18.2527 1.41443C17.7986 0.861465 17.0627 0.861914 16.6091 1.41543L5.80864 14.5935L3.1442 11.3458C2.69032 10.7925 1.95444 10.7925 1.50056 11.3458C1.04669 11.899 1.04669 12.796 1.50056 13.3492L4.98724 17.5992C5.20527 17.865 5.501 18.0143 5.80934 18.0142C6.11768 18.0141 6.41336 17.8646 6.63128 17.5987L18.2535 3.4179Z" fill="#0E2242"></path></g><defs><clipPath id="clip0_1789_31508"><rect width="18.0486" height="18" fill="white" transform="translate(0.886719)"></rect></clipPath></defs></svg>
+                       </span>
+                       <p class="benefits-icon__text">Your child and where they are today</p>
+                     </li>
+                      <li class="benefits-li">
+                       <span class="benefits-icon-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none"><g clip-path="url(#clip0_1789_31508)"><path d="M18.2535 3.4179C18.7072 2.86438 18.7068 1.9674 18.2527 1.41443C17.7986 0.861465 17.0627 0.861914 16.6091 1.41543L5.80864 14.5935L3.1442 11.3458C2.69032 10.7925 1.95444 10.7925 1.50056 11.3458C1.04669 11.899 1.04669 12.796 1.50056 13.3492L4.98724 17.5992C5.20527 17.865 5.501 18.0143 5.80934 18.0142C6.11768 18.0141 6.41336 17.8646 6.63128 17.5987L18.2535 3.4179Z" fill="#0E2242"></path></g><defs><clipPath id="clip0_1789_31508"><rect width="18.0486" height="18" fill="white" transform="translate(0.886719)"></rect></clipPath></defs></svg>
+                       </span>
+                       <p class="benefits-icon__text">What your family’s college admissions goals are</p>
+                     </li>
+                      <li class="benefits-li">
+                       <span class="benefits-icon-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none"><g clip-path="url(#clip0_1789_31508)"><path d="M18.2535 3.4179C18.7072 2.86438 18.7068 1.9674 18.2527 1.41443C17.7986 0.861465 17.0627 0.861914 16.6091 1.41543L5.80864 14.5935L3.1442 11.3458C2.69032 10.7925 1.95444 10.7925 1.50056 11.3458C1.04669 11.899 1.04669 12.796 1.50056 13.3492L4.98724 17.5992C5.20527 17.865 5.501 18.0143 5.80934 18.0142C6.11768 18.0141 6.41336 17.8646 6.63128 17.5987L18.2535 3.4179Z" fill="#0E2242"></path></g><defs><clipPath id="clip0_1789_31508"><rect width="18.0486" height="18" fill="white" transform="translate(0.886719)"></rect></clipPath></defs></svg>
+                       </span>
+                       <p class="benefits-icon__text">What are the best strategies and proper roadmap for your specific child and situation</p>
+                     </li>
+                      <li class="benefits-li">
+                       <span class="benefits-icon-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none"><g clip-path="url(#clip0_1789_31508)"><path d="M18.2535 3.4179C18.7072 2.86438 18.7068 1.9674 18.2527 1.41443C17.7986 0.861465 17.0627 0.861914 16.6091 1.41543L5.80864 14.5935L3.1442 11.3458C2.69032 10.7925 1.95444 10.7925 1.50056 11.3458C1.04669 11.899 1.04669 12.796 1.50056 13.3492L4.98724 17.5992C5.20527 17.865 5.501 18.0143 5.80934 18.0142C6.11768 18.0141 6.41336 17.8646 6.63128 17.5987L18.2535 3.4179Z" fill="#0E2242"></path></g><defs><clipPath id="clip0_1789_31508"><rect width="18.0486" height="18" fill="white" transform="translate(0.886719)"></rect></clipPath></defs></svg>
+                       </span>
+                       <p class="benefits-icon__text">Identify if your child’s situation and goal matches our experience in the College Consulting Program</p>
+                     </li>
+                      <li class="benefits-li">
+                       <span class="benefits-icon-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none"><g clip-path="url(#clip0_1789_31508)"><path d="M18.2535 3.4179C18.7072 2.86438 18.7068 1.9674 18.2527 1.41443C17.7986 0.861465 17.0627 0.861914 16.6091 1.41543L5.80864 14.5935L3.1442 11.3458C2.69032 10.7925 1.95444 10.7925 1.50056 11.3458C1.04669 11.899 1.04669 12.796 1.50056 13.3492L4.98724 17.5992C5.20527 17.865 5.501 18.0143 5.80934 18.0142C6.11768 18.0141 6.41336 17.8646 6.63128 17.5987L18.2535 3.4179Z" fill="#0E2242"></path></g><defs><clipPath id="clip0_1789_31508"><rect width="18.0486" height="18" fill="white" transform="translate(0.886719)"></rect></clipPath></defs></svg>
+                       </span>
+                       <p class="benefits-icon__text">Determine if we can help your child get into an Ivy League / Top 25 university OR at least a tier or 2 better university</p>
+                     </li>
+                   </ul>
+                   <div class="benefits__ul-dot">
+                      <ul>
+                        <li>
+                          <span class="benefits-dot-svg"><svg aria-hidden="true" class="e-font-icon-svg e-fas-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg></span>
+                          <p class="benefits-icon__text">If yes, then provide you an additional FREE 1<span class="dash-txt">-</span>hour College Planning and Audit session to create a deeper step<span class="dash-txt">-</span>by<span class="dash-txt">-</span>step roadmap with your entire family</p>
+                        </li>
+                         <li>
+                          <span class="benefits-dot-svg"><svg aria-hidden="true" class="e-font-icon-svg e-fas-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg></span>
+                          <p class="benefits-icon__text"> If not, then we’ll give our best efforts to recommend programs we believe will benefit your child</p>
+                        </li>
+                      </ul>
+                   </div>
+                    <ul class="benefits-ul">
+                     <li class="benefits-li">
+                       <span class="benefits-icon-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none"><g clip-path="url(#clip0_1789_31508)"><path d="M18.2535 3.4179C18.7072 2.86438 18.7068 1.9674 18.2527 1.41443C17.7986 0.861465 17.0627 0.861914 16.6091 1.41543L5.80864 14.5935L3.1442 11.3458C2.69032 10.7925 1.95444 10.7925 1.50056 11.3458C1.04669 11.899 1.04669 12.796 1.50056 13.3492L4.98724 17.5992C5.20527 17.865 5.501 18.0143 5.80934 18.0142C6.11768 18.0141 6.41336 17.8646 6.63128 17.5987L18.2535 3.4179Z" fill="#0E2242"></path></g><defs><clipPath id="clip0_1789_31508"><rect width="18.0486" height="18" fill="white" transform="translate(0.886719)"></rect></clipPath></defs></svg>
+                       </span>
+                       <p class="benefits-icon__text">Answer questions you may have about your child and/or college admissions</p>
+                     </li>
+                     </ul>
+                </div>
+              </div>
+              <div class="benefits__right">
+                <img src="./images/hp-lastsec-img.jpeg" alt="">
+              </div>
+           </div>   
+        </div>
+        <div class="benefits__bg">
+          <img src="./images/zenith-benefits-bg.webp" alt="">
+        </div>
+      </section>
+
+       
+    <section class="banner-bottom">
+        <div class="banner-bottom__wrapper">
+             <div class="benefits__banner-text-block">
+              <p class="benefits__banner-text text-m">Our goal is that you leave the consultation no longer confused or stressed about what is the best or right way to help your child.</p>
+              <p class="benefits__banner-text text-m">And you can feel confident knowing that you’re giving your child the best chance at success and getting into a top university.</p>
+             </div>
+             <a href="#" class="cta-main benefits-banner">Book A Free Consultation</a>
+           </div>
+           <div class="banner-bottom__bg">
+            <img src="./images/banner-bottom-bg.jpeg" alt="">
+           </div>
+      </section>
+       
+
+      <footer class="footer">
+         <div class="footer__container">
+          <div class="footer__top-wrapper">
+             <div class="footer__top">
+               <div class="footer__logo-links">
+                <a href="https://apply.zenithprepacademy.com" class="footer__logo">
+                  <img src="./images/footer-logo.svg" alt="">
+                </a>
+                <div class="footer__links-nav">
+                  <a href="https://www.instagram.com/zenithprepacademy/" target="_blank" class="footer__link-wrapper inst">
+                     <svg aria-hidden="true" class="footer-svg-link" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                  </a>
+                  <a href="https://www.linkedin.com/company/zenith-prep-academy" target="_blank" class="footer__link-wrapper linkedin">
+                     <svg aria-hidden="true" class="footer-svg-link" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                  </a>
+                  <a href="https://www.facebook.com/zenithprepacademy/" target="_blank" class="footer__link-wrapper fb">
+                     <svg aria-hidden="true" class="footer-svg-link" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                  </a>
+                   <a href="https://x.com/zenithprepedu?s=21" target="_blank" class="footer__link-wrapper twitter">
+                    <svg aria-hidden="true" class="footer-svg-link" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+                  </a>
+                </div>
+              </div>
+              <div class="footer__contact-row">
+                <div class="footer__contact-left">
+                  <div class="icon-wrapper">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
+                  </div>
+                  <p class="footer__contact-left-text">Headquarters: <br>39899 Balentine Drive, Suite 200 Newark, CA 94560</p>
+                </div>
+                <div class="footer__contact-right">
+                    <a href="tel:(510)585-9744" class="footer__contact-link">
+                      <div class="footer-contact-svg">
+                        <svg aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg>
+                      </div>
+                      <span class="footer-contact-link__text">(510) 585-9744 </span>
+                    </a>
+                    <a href="mailto:office@zenithprepacademy.com" class="footer__contact-link mail">
+                      <div class="footer-contact-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="none"><g opacity="0.4"><path d="M20.8152 4.17236L14.4463 10.5002L20.8152 16.8281C20.9303 16.5874 21.0001 16.3214 21.0001 16.0373V4.9631C21.0001 4.67899 20.9303 4.413 20.8152 4.17236Z" fill="black"></path><path d="M19.1545 3.11719H1.84592C1.5618 3.11719 1.29581 3.18704 1.05518 3.30217L9.19526 11.4012C9.915 12.121 11.0854 12.121 11.8052 11.4012L19.9452 3.30217C19.7046 3.18704 19.4386 3.11719 19.1545 3.11719Z" fill="black"></path><path d="M0.18498 4.17236C0.0698496 4.413 0 4.67899 0 4.9631V16.0373C0 16.3214 0.0698496 16.5875 0.18498 16.8281L6.55385 10.5002L0.18498 4.17236Z" fill="black"></path><path d="M13.5764 11.3701L12.6751 12.2714C11.4759 13.4706 9.52449 13.4706 8.32524 12.2714L7.42404 11.3701L1.05518 17.698C1.29581 17.8131 1.5618 17.8829 1.84592 17.8829H19.1545C19.4386 17.8829 19.7046 17.8131 19.9452 17.698L13.5764 11.3701Z" fill="black"></path></g></svg>
+                      </div>
+                          <span class="footer-contact-link__text">office@zenithprepacademy.com</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="footer__nav-container">
+                    <div class="footer__nav-wrapper">
+                        <nav aria-label="Menu" class="footer__nav-left">
+                          <ul>
+                            <li>
+                              <a href="https://apply.zenithprepacademy.com/team/" class="footer-nav-link">Our Team</a>
+                            </li>
+                             <li>
+                              <a href="https://apply.zenithprepacademy.com/hear-from-parents/" class="footer-nav-link">Hear From Our Parents</a>
+                            </li>
+                             <li>
+                              <a href="https://apply.zenithprepacademy.com/3-factors-webinar/" class="footer-nav-link">Webinar</a>
+                            </li>
+                             <li>
+                              <a href="https://apply.zenithprepacademy.com/sitemap/" class="footer-nav-link">Sitemap</a>
+                            </li>
+                          </ul>
+                        </nav>
+                        <div class="footer__nav-right">
+                          <h3 class="footer__legend">PROGRAMS</h3>
+                          <ul class="footer__nav-ul">
+                            <li>
+                              <a class="footer-right-link">Business
+                                <span class="sub-arrow"><svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-down" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg></span>
+                              </a>
+                              <ul class="footer-sub-menu">
+                                <li>
+                                  <a class="submenu-link" href="https://apply.zenithprepacademy.com/business/mini-mba-strategy-essentials/">Mini-MBA (Strategy Essentials)</a>
+                                </li>
+                                <li>
+                                  <a class="submenu-link" href="https://apply.zenithprepacademy.com/business/mini-mba-data-analysis-decision/">Mini-MBA (Analysis and Decision-Making)</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                                 <a class="footer-right-link">Coding
+                                <span class="sub-arrow"><svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-down" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg></span>
+                              </a>
+                              <ul class="footer-sub-menu">
+                                <li>
+                                   <a class="submenu-link" href="https://apply.zenithprepacademy.com/coding/software-development/">Programming (Software Development)</a>
+                                </li>
+                                <li>
+                                   <a class="submenu-link" href="https://apply.zenithprepacademy.com/coding/web-development/">Programming (Web Development)</a>
+                                </li>
+                              </ul>
+                            </li>
+                             <li>
+                              <a class="footer-right-link">Healthcare
+                                <span class="sub-arrow"><svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-down" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg></span>
+                              </a>
+                              <ul class="footer-sub-menu">
+                                <li>
+                                  <a class="submenu-link" href="https://apply.zenithprepacademy.com/healthcare/research-fundamentals/">Pre-Med &amp; Healthcare</a>
+                                </li>
+                              </ul>
+                            </li>
+                             
+                          </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="footer-menu-mobile">
+    <a class="footer-menu-mobile__toggle" id="footer-menu-toggle" aria-label="Menu" aria-expanded="false">
+        <span class="footer-menu-mobile__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="23" viewBox="0 0 35 23" fill="none">
+                <line x1="1.5" y1="1.5" x2="33.5" y2="1.5" stroke="#EBB858" stroke-width="3" stroke-linecap="round"/>
+                <line x1="1.5" y1="11.5" x2="33.5" y2="11.5" stroke="#EBB858" stroke-width="3" stroke-linecap="round"/>
+                <line x1="1.5" y1="21.5" x2="33.5" y2="21.5" stroke="#EBB858" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </span>
+        <span class="footer-menu-mobile__icon-close">
+            <svg aria-hidden="true" role="presentation" class="e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                <path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path>
+            </svg>
+        </span>
+      </a>
+
+    <nav class="footer-menu-mobile__nav" id="footer-mobile-nav" aria-hidden="true">
+        <ul class="footer-menu-mobile__list">
+            <li class="footer-menu-mobile__item"><a href="https://apply.zenithprepacademy.com/team/" class="footer-menu-mobile__link">Our Team</a></li>
+            <li class="footer-menu-mobile__item"><a href="https://apply.zenithprepacademy.com/hear-from-parents/" class="footer-menu-mobile__link">Hear From Our Parents</a></li>
+            <li class="footer-menu-mobile__item"><a href="https://apply.zenithprepacademy.com/3-factors-webinar/" class="footer-menu-mobile__link">Webinar</a></li>
+            <li class="footer-menu-mobile__item"><a href="https://apply.zenithprepacademy.com/sitemap/" class="footer-menu-mobile__link">Sitemap</a></li>
+            <li class="footer-menu-mobile__item footer-menu-mobile__item--has-children">
+                <span class="footer-menu-mobile__dropdown-toggle" aria-expanded="false">
+                    Business
+                    <span class="footer-menu-mobile__arrow">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-down" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+                        </svg>
+                    </span>
+                  </span>
+                <ul class="footer-menu-mobile__sub-list">
+                    <li class="footer-menu-mobile__sub-item"><a href="https://apply.zenithprepacademy.com/business/mini-mba-strategy-essentials/" class="footer-menu-mobile__sub-link">Mini-MBA (Strategy Essentials)</a></li>
+                    <li class="footer-menu-mobile__sub-item"><a href="https://apply.zenithprepacademy.com/business/mini-mba-data-analysis-decision/" class="footer-menu-mobile__sub-link">Mini-MBA (Analysis and Decision-Making)</a></li>
+                </ul>
+            </li>
+            <li class="footer-menu-mobile__item footer-menu-mobile__item--has-children">
+                <span class="footer-menu-mobile__dropdown-toggle" aria-expanded="false">
+                    Coding
+                    <span class="footer-menu-mobile__arrow">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-down" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+                        </svg>
+                    </span>
+                  </span>
+                <ul class="footer-menu-mobile__sub-list">
+                    <li class="footer-menu-mobile__sub-item"><a href="https://apply.zenithprepacademy.com/coding/software-development/" class="footer-menu-mobile__sub-link">Programming (Software Development)</a></li>
+                    <li class="footer-menu-mobile__sub-item"><a href="https://apply.zenithprepacademy.com/coding/web-development/" class="footer-menu-mobile__sub-link">Programming (Web Development)</a></li>
+                </ul>
+            </li>
+            <li class="footer-menu-mobile__item footer-menu-mobile__item--has-children">
+                <span class="footer-menu-mobile__dropdown-toggle" aria-expanded="false">
+                    Healthcare
+                    <span class="footer-menu-mobile__arrow">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-caret-down" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+                        </svg>
+                    </span>
+                  </span>
+                <ul class="footer-menu-mobile__sub-list">
+                    <li class="footer-menu-mobile__sub-item"><a href="https://apply.zenithprepacademy.com/healthcare/research-fundamentals/" class="footer-menu-mobile__sub-link">Pre-Med & Healthcare</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+                </div>
+              </div>
+             </div>
+             <div class="footer__bottom-wrapper">
+              <div class="footer__bot">
+                  <div class="footer__copyright">
+                    <span class="footer__copyright-text">Copyright © <span class="year">2026</span> <br>All Rights Reserved by Zenith Prep Academy.</span>
+                  </div>
+                   <div class="footer__centered">
+                     <a href="https://apply.zenithprepacademy.com/privacy-policy/" class="footer-link-center relative">Privacy Policy</a>
+                     <a href="https://apply.zenithprepacademy.com/terms-conditions/" class="footer-link-center">Terms & Conditions</a>
+                   </div>
+                   <a href="https://www.influex.com/?utm_source=zenith-prep-academy&utm_medium=footer-link&utm_content=influexwp-client-site-footer-link&utm_campaign=influexwp-client-site" class="footer__credits-logo">
+                    <img src="./images/influex-logo-new.svg" alt="">
+                   </a>
+              </div>
+             </div>
+          </div>
+          
+         </div>
+      </footer>
+      <div class="video-modal" id="videoModal" aria-hidden="true">
+  <div class="video-modal__overlay" data-close></div>
+
+  <div class="video-modal__content" role="dialog" aria-modal="true" aria-label="Video popup">
+    <button class="video-modal__close" type="button" aria-label="Close video" data-close>✕</button>
+
+    <iframe
+      class="video-modal__iframe"
+      src=""
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+    </main>
+  </body>
+  <script src="./scripts/header-menu.js"></script>
+  <script id="footer-submenu-hover">
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.footer__nav-ul > li');
+
+  items.forEach((li) => {
+    const submenu = li.querySelector(':scope > .footer-sub-menu');
+    if (!submenu) return;
+
+    submenu.style.display = 'none';
+
+    li.addEventListener('mouseenter', () => {
+      document.querySelectorAll('.footer__nav-ul > li > .footer-sub-menu').forEach((sm) => {
+        if (sm !== submenu) sm.style.display = 'none';
+      });
+
+      submenu.style.display = 'block';
+    });
+
+    li.addEventListener('mouseleave', () => {
+      submenu.style.display = 'none';
+    });
+  });
+});
+</script>
+<script class="current-year">
+  document.addEventListener("DOMContentLoaded", () => {
+    const year = new Date().getFullYear();
+    document.querySelectorAll("span.year").forEach((el) => {
+      el.textContent = year;
+    });
+  });
+</script>
+<script id="footer-burger">
+(function () {
+  const toggleButton = document.getElementById('footer-menu-toggle');
+  const navWrapper = document.getElementById('footer-mobile-nav');
+
+  if (!toggleButton || !navWrapper) return;
+
+  // OPEN/CLOSE MAIN NAV
+  toggleButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    const next = !isExpanded;
+
+    this.setAttribute('aria-expanded', String(next));
+    navWrapper.setAttribute('aria-hidden', String(!next));
+
+    if (!next) closeAllSubmenus();
+  });
+
+  // SUBMENU TOGGLES (event delegation on nav)
+  navWrapper.addEventListener('click', function (e) {
+    const dropdownToggle = e.target.closest('.footer-menu-mobile__dropdown-toggle');
+    if (!dropdownToggle) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    const isExpanded = dropdownToggle.getAttribute('aria-expanded') === 'true';
+    const next = !isExpanded;
+
+    // close others
+    navWrapper.querySelectorAll('.footer-menu-mobile__dropdown-toggle[aria-expanded="true"]').forEach(t => {
+      if (t !== dropdownToggle) t.setAttribute('aria-expanded', 'false');
+    });
+
+    dropdownToggle.setAttribute('aria-expanded', String(next));
+  });
+
+  // click outside closes
+  document.addEventListener('click', function (e) {
+    if (!toggleButton.contains(e.target) && !navWrapper.contains(e.target)) {
+      if (navWrapper.getAttribute('aria-hidden') === 'false') {
+        toggleButton.setAttribute('aria-expanded', 'false');
+        navWrapper.setAttribute('aria-hidden', 'true');
+        closeAllSubmenus();
+      }
+    }
+  });
+
+  function closeAllSubmenus() {
+    navWrapper.querySelectorAll('.footer-menu-mobile__dropdown-toggle[aria-expanded="true"]').forEach(t => {
+      t.setAttribute('aria-expanded', 'false');
+    });
+  }
+})();
+</script>
+<script id="video-modal">
+document.addEventListener("DOMContentLoaded", () => {
+  const trigger = document.querySelector(".video__container");
+  const modal = document.getElementById("videoModal");
+  const iframe = modal.querySelector(".video-modal__iframe");
+
+  const VIMEO_URL =
+    "https://player.vimeo.com/video/990661961?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0#t=";
+
+  function openModal() {
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    iframe.src = VIMEO_URL + "&autoplay=1";
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    iframe.src = ""; 
+    document.body.style.overflow = "";
+  }
+  if (trigger) trigger.addEventListener("click", openModal);
+
+  modal.addEventListener("click", (e) => {
+    if (e.target.hasAttribute("data-close")) closeModal();
+  });
+
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
+  });
+});
+</script>
+
+
+</html>

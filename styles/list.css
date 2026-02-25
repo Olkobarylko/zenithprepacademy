@@ -1,0 +1,267 @@
+.list {
+  position: relative;
+  background: #0e2242;
+}
+
+.list__wrapper {
+  width: 73.6111vw;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  bottom: -5vw;
+}
+
+.list__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://placehold.co/1440x614");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.list__header {
+  text-align: center;
+  margin-bottom: 4.2083vw;
+}
+
+.list__title {
+  font-family: "Bebas Neue Pro", sans-serif;
+  font-size: 4.166vw;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.0833vw;
+  color: white;
+  margin: 0 0 0.578vw;
+}
+
+.list__intro {
+  font-family: "EB Garamond", serif;
+  color: white;
+  margin: 0;
+  line-height: 1.5625vw;
+}
+
+.list__achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 0.3472vw;
+  width: 67.0104vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3472vw;
+}
+
+.list__achievement {
+  background: rgba(254, 209, 125, 0.8);
+  display: flex;
+  align-items: center;
+  padding: 1.0743vw 1.6089vw 1.0743vw 1.6089vw;
+  min-height: 4.275vw;
+}
+
+.list__achievement:first-child {
+  min-height: 6.5409vw;
+}
+
+.list__check {
+  flex-shrink: 0;
+  width: 1.3889vw;
+  height: 1.3889vw;
+  margin-right: 3.8194vw;
+}
+
+.list__achievement-text {
+  font-family: "EB Garamond", serif;
+  font-size: 1.5625vw;
+  font-weight: 500;
+  line-height: 2.2667vw;
+  color: #0e2242;
+  flex: 1;
+}
+
+.list__achievement-text em {
+  font-style: italic;
+}
+
+.list__stats {
+  width: 67.0104vw;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 2.0833vw 2.0833vw rgba(0, 0, 0, 0.08);
+  outline: 1px solid #fed17d;
+  outline-offset: -1px;
+  padding: 2.0917vw 6.7vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+}
+
+.list__stat {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6944vw;
+  padding: 0 2.0833vw;
+  position: relative;
+}
+
+.list__stat:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 60%;
+  background: transparent;
+}
+
+.list__stat-number {
+  font-family: "EB Garamond", serif;
+  font-size: 2.4097vw;
+  font-weight: 600;
+  line-height: 2.4097vw;
+  color: #ebb858;
+}
+
+.list__stat-label {
+  font-family: "EB Garamond", serif;
+  font-size: 1.5625vw;
+  font-weight: 500;
+  line-height: 1.5625vw;
+  color: #0e2242;
+}
+
+.list__decoration {
+  position: absolute;
+  width: 9.0625vw;
+  height: 9.0625vw;
+  right: 0.5vw;
+  bottom: 7vw;
+  z-index: 3;
+  pointer-events: none;
+}
+.list__decoration-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .list {
+    padding: 12.0513vw 0 17.9487vw;
+  }
+
+  .list__wrapper {
+    width: 90.8718vw;
+  }
+
+  .list__bg {
+    background-image: url("https://placehold.co/390x881");
+  }
+
+  .list__header {
+    margin-bottom: 6%;
+  }
+
+  .list__title {
+    font-size: 9vw;
+        letter-spacing: 0em;
+    line-height: 9vw;
+    margin-bottom: 5.9vw;
+  }
+
+  .list__intro {
+    font-size: 5vw;
+    line-height: 6vw;
+    padding: 0 3vw;
+  }
+
+  .list__achievements {
+    width: 90.8718vw;
+    margin-bottom: 0vw;
+    gap: 1.5385vw;
+  }
+
+  .list__achievement {
+    padding: 4.0308vw 4.5385vw 4.0308vw 21.2308vw;
+    min-height: 19vw;
+    position: relative;
+  }
+
+  .list__achievement:first-child {
+    min-height: 38.7949vw;
+  }
+
+  .list__check {
+    position: absolute;
+    left: 4.5385vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5.1282vw;
+    height: 5.1282vw;
+    margin-right: 0;
+  }
+
+  .list__achievement-text {
+    font-size: 4.5128vw;
+    line-height: 4.9513vw;
+  }
+
+  .list__stats {
+    width: 90.8718vw;
+    padding: 2.5vw 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .list__stat {
+    padding: 5.1282vw 2.5vw;
+    gap: 1.2821vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .list__stat:not(:last-child)::after {
+    display: none;
+  }
+
+  .list__stat:nth-child(2) {
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+  }
+
+  .list__stat-number {
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+
+  .list__stat:nth-child(2) .list__stat-number {
+    font-size: 6.5128vw;
+    line-height: 6.5vw;
+  }
+
+  .list__stat-label {
+    font-size: 5.5128vw;
+    line-height: 5.5vw;
+    text-align: left;
+  }
+
+  .list__decoration {
+    width: 21.7462vw;
+    height: 21.7462vw;
+    right: 3vw;
+    bottom: 31%;
+    z-index: 1000;
+  }
+
+  .list__decoration {
+    display: none;
+  }
+
+  .list__decoration-mobile {
+    display: block;
+  }
+}

@@ -1,0 +1,228 @@
+.benefits {
+  position: relative;
+  z-index: 4;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
+  padding: 17% 0% 8% 0%;
+}
+.benefits__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+.benefits__wrapper {
+  display: flex;
+  flex-flow: column;
+  padding: 10px;
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+}
+.benefits__inner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.benefits__subtitle {
+  font-family: "EB Garamond", Sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.benefits__title {
+  margin: 20px 0;
+  font-family: "Bebas Neue Pro", Sans-serif;
+  font-size: 4.167vw;
+  color: #ffffff;
+  line-height: 1;
+  text-align: center;
+}
+.benefits__list-figures {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+}
+.benefits__figure {
+  width: 100%;
+  padding: 5px;
+  position: relative;
+}
+.benefits__item-container {
+  width: 16.6%;
+}
+.benefits__figcaption {
+  color: #ffffff;
+  background-color: #0e224266;
+  font-family: "Bebas Neue Pro", Sans-serif;
+  font-size: 1.042vw;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits__text {
+  width: 100%;
+  max-width: 72.5%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "EB Garamond", Sans-serif;
+  font-size: 1.563vw;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 1em 0;
+}
+
+.benefits__list-container {
+  width: 100%;
+  display: flex;
+}
+.benefits__left {
+  width: 50%;
+  padding: 0% 4% 0% 1%;
+}
+.benefits__title-left {
+  font-family: "Bebas Neue Pro", Sans-serif;
+  font-size: 3.125vw;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+.benefits-li {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.benefits__icon-list {
+}
+.benefits-ul {
+  display: flex;
+  flex-flow: column;
+  gap: 4px;
+}
+.benefits-icon-svg {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  margin-top: 0.4vw;
+}
+.benefits-icon-svg svg path {
+  fill: #fed17d !important;
+  transition: fill 0.3s;
+}
+.benefits-icon__text {
+  font-size: 1.354vw;
+  font-weight: 400;
+  color: #ffffff;
+  transition: color 0.3s;
+  text-wrap-style: auto;
+}
+.benefits__ul-dot ul {
+  padding: 0% 0% 0% 14%;
+  margin: 5px 0px 5px 0px;
+}
+.benefits__ul-dot ul li {
+  display: flex;
+  gap: 20px;
+}
+.benefits-dot-svg {
+  width: 8px;
+  height: 8px;
+  display: flex;
+  margin-top: 0.8vw;
+}
+.benefits-dot-svg svg {
+  fill: #fed17d;
+  transition: fill 0.3s;
+}
+.dash-txt {
+  font-family: "Bebas Neue Pro", Sans-serif;
+}
+.benefits__right {
+  width: 50%;
+  padding: 10px;
+}
+.benefits__iframe-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -10%;
+}
+
+@media (width <= 1024px) {
+  .benefits__figcaption {
+    font-size: 1.9vw;
+  }
+  .benefits__wrapper {
+    padding: 17% 5% 8% 5%;
+    width: 100%;
+  }
+  .benefits__text {
+    font-size: 2.2vw;
+  }
+}
+
+@media (width <= 768px) {
+  .benefits__subtitle {
+    display: none;
+  }
+  .benefits {
+    padding: 120% 3% 5% 3%;
+  }
+  .benefits__wrapper {
+    padding: 0;
+  }
+  .benefits__title {
+    font-size: 10.5vw;
+  }
+  .benefits__item-container {
+    width: 33.333%;
+  }
+  .benefits__figcaption {
+    font-size: 5vw;
+  }
+  .benefits__title br {
+    display: none;
+  }
+  .benefits__text {
+    font-size: 5.7vw;
+    max-width: 100%;
+  }
+  .benefits__list-container {
+    display: flex;
+    flex-flow: column;
+  }
+  .benefits__left {
+    width: 100%;
+  }
+  .benefits__right {
+    width: 60%;
+    padding: 0;
+    display: flex;
+    align-self: center;
+    margin-top: 5%;
+  }
+  .benefits__title-left {
+    font-size: 11vw;
+  }
+  .benefits__right img {
+    aspect-ratio: 4 / 3;
+  }
+  .benefits-icon__text {
+    font-size: 5vw;
+  }
+}

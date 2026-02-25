@@ -1,0 +1,249 @@
+.growth {
+  position: relative;
+  padding: 0;
+  margin-top: -10vw;
+}
+
+.growth__bg-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.growth__bg-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.growth__wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 12.7vw 0 7.9556vw;
+}
+
+.growth__intro {
+  width: 39.2347vw;
+  margin: 0 auto 1.3978vw;
+  text-align: center;
+}
+
+.growth__intro-text {
+  color: #0e2242;
+  font-family: "EB Garamond", serif;
+  font-size: 1.5625vw;
+  font-weight: 500;
+  line-height: 1.8757vw;
+}
+
+.growth__intro-text strong {
+  font-weight: 700;
+}
+
+.growth__achievements {
+  width: 55.9465vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4.0833vw;
+}
+
+.growth__achievement {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2778vw;
+  padding-top: 1.4vw;
+}
+
+.growth__achievement-rank {
+  color: #ebb858;
+  font-family: "EB Garamond", serif;
+  font-size: 1.9792vw;
+  font-weight: 600;
+  line-height: 2.3757vw;
+  margin: 0;
+}
+
+.growth__achievement-desc {
+  color: #0e2242;
+  font-family: "EB Garamond", serif;
+  font-size: 1.25vw;
+  font-weight: 600;
+  line-height: 1.5vw;
+  margin: 0;
+  max-width: 19.3271vw;
+}
+
+.growth__achievement-logo {
+  flex: 0 0 6.9792vw;
+  width: 6.9792vw;
+  height: 6.9792vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.growth__logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.growth__main-image {
+  width: 41.4201vw;
+  height: 25.1056vw;
+  margin: 0 auto 3.2639vw;
+  position: relative;
+  padding-left: 1vw;
+}
+
+.growth__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.growth__bottom-image {
+  width: 44.3924vw;
+  height: 5.2563vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+.growth__bottom-image img:first-child {
+  display: block;
+}
+
+.growth__bottom-image img:last-child {
+  display: none;
+}
+
+.growth__pointer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 1.4993vw;
+  height: 3.8736vw;
+}
+
+.growth__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.growth__bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .growth__bottom-image img:first-child {
+    display: none;
+  }
+
+  .growth__bottom-image img:last-child {
+    display: block;
+  }
+
+  .growth {
+    padding: 0;
+  }
+
+  .growth__bg-shape {
+    display: none;
+  }
+
+  .growth__wrapper {
+    padding: 5% 2.5641% 15%;
+  }
+
+  .growth__intro {
+    width: 100%;
+    margin-bottom: 8%;
+  }
+
+  .growth__intro-text {
+    font-size: 6vw;
+    line-height: 1.2em;
+  }
+
+  .growth__intro-text br {
+    display: none;
+  }
+
+  .growth__achievements {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 1%;
+  }
+
+  .growth__achievement {
+    order: 2;
+    text-align: center;
+    gap: 1.5385vw;
+  }
+
+  .growth__achievement--left {
+    order: 1;
+  }
+
+  .growth__achievement--right {
+    order: 3;
+  }
+
+  .growth__achievement-rank {
+    font-size: 6vw;
+    line-height: 1.2em;
+  }
+
+  .growth__achievement-desc {
+    font-size: 6vw;
+    line-height: 1.2em;
+    max-width: none;
+  }
+
+  .growth__achievement-logo {
+    order: 0;
+    flex: 0 0 30.9744vw;
+    width: 30.9744vw;
+    height: 30.9744vw;
+  }
+
+  .growth__main-image {
+    width: 94.3077vw;
+    height: 58.5641vw;
+    margin-bottom: 4%;
+    padding-left: 0vw;
+  }
+
+  .growth__bottom-image {
+    width: 83.8462vw;
+    height: 13.6513vw;
+  }
+
+  .growth__pointer {
+    bottom: inherit;
+    top: calc(100% - 8vw);
+    width: 5.2381vw;
+    height: 13.5385vw;
+  }
+
+  .growth__bg {
+    opacity: 0.15;
+  }
+}
