@@ -3,6 +3,10 @@
 .header {
   height: 4.8306vw;
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
 }
 
 .header__wrapper {
@@ -11,6 +15,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
+  background: #fff;
 }
 
 .header__logo {
@@ -124,6 +129,10 @@
 
 .header__bottom {
   display: none;
+}
+
+main {
+  padding-top: 4.8306vw;
 }
 
 @media (max-width: 768px) {
@@ -544,5 +553,8 @@
 
   .burger-menu {
     top: 15vw;
+  }
+  main {
+    padding-top: 35%;
   }
 }

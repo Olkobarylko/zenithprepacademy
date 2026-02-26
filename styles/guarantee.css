@@ -1,0 +1,238 @@
+.guarantee {
+  background: #fff;
+  padding-top: 3%;
+  position: relative;
+  z-index: 1;
+}
+.guarantee::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top center;
+  pointer-events: none;
+  z-index: -1;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20100'%20preserveAspectRatio='none'%3E%3Cpath%20fill='%23F9F9F9'%20d='M0,6V0h1000v100L0,6z'/%3E%3C/svg%3E");
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+.guarantee__wrapper {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+}
+.guarantee__top {
+  display: flex;
+}
+.guarantee__top-left {
+  padding: 2% 3% 2% 2%;
+  width: 50%;
+}
+.guarantee__top-left-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.guarantee__top-left-list {
+  display: flex;
+  justify-content: space-between;
+}
+.guarantee__top-left-list__item {
+  width: 32%;
+}
+.guarantee__top-right {
+  width: 50%;
+  padding: 0% 2% 2% 1%;
+}
+.guarantee__title {
+  font-family: "Bebas Neue Pro", Sans-serif;
+  font-size: 4.167vw;
+  font-weight: 700;
+  color: #0e2242;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.guarantee__stars-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.guarantee__stars-image {
+  width: 10.5vw;
+}
+.guarantee__span-5 {
+  font-size: 2.297vw;
+  font-weight: 700;
+  color: #0e2242;
+  line-height: 1;
+  font-family: "Bebas Neue Pro", Sans-serif;
+  margin-left: 15px;
+}
+.guarantee__subtitle {
+  font-size: 1.823vw;
+  font-weight: 700;
+  color: #0e2242;
+  line-height: 1;
+  font-family: "Bebas Neue Pro", Sans-serif;
+  margin-bottom: 20px;
+}
+.guarantee__box {
+  margin: 1% 0% 0% 0%;
+  padding: 4%;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #ebb858;
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+}
+.guarantee__box-text-block p {
+  font-size: 1.563vw;
+  font-weight: 400;
+  line-height: 1.1em;
+  color: #0e2242;
+}
+
+.guarantee__box-text-block p strong {
+  font-weight: 700;
+}
+.cta-main.guarantee-cta {
+  width: 100%;
+  max-width: 75%;
+  margin-top: 8%;
+}
+
+.guarantee__bottom {
+  display: flex;
+}
+.guarantee__bot-left {
+  width: 50%;
+  padding: 0% 2% 2% 0%;
+}
+.guarantee-bot__subtitle {
+  font-size: 1.563vw;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #0e2242;
+}
+.guarantee__bot-box {
+  margin-top: 7%;
+  padding: 4% 2.5% 4% 3%;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #ebb858;
+  margin-bottom: 7%;
+}
+.guarantee__bot-box ul li {
+  font-size: 1.563vw;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #0e2242;
+}
+.guarantee__bot-box ul {
+  margin-left: 2.5vw;
+  list-style: disc;
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+}
+.guarantee__bot-box ul li strong {
+  font-size: 1.563vw;
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #0e2242;
+}
+.booking-link {
+  color: #0055de;
+  line-height: 1.2em;
+  font-size: 1.563vw;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.guarantee__bot-right {
+  width: 50%;
+  padding: 0% 2% 2% 2%;
+}
+
+@media (width <= 768px) {
+  .guarantee__wrapper {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 8%;
+  }
+  .guarantee__top {
+    flex-flow: column;
+  }
+  .guarantee__top-left {
+    width: 100%;
+  }
+  .guarantee__top-right {
+    width: 100%;
+  }
+  .guarantee__title {
+    font-size: 11vw;
+  }
+  .guarantee__stars-image {
+    width: 38vw;
+  }
+  .guarantee__span-5 {
+    font-size: 7.4vw;
+  }
+  .guarantee__subtitle {
+    font-size: 5.4vw;
+    line-height: 1.2em;
+  }
+
+  .guarantee__box-text-block p {
+    font-size: 4.5vw;
+  }
+  .cta-main.guarantee-cta {
+    max-width: 100%;
+    font-size: 4.5vw;
+    height: 60px;
+    margin-top: 4%;
+  }
+}
+
+@media (width <= 768px) {
+  .guarantee__bottom {
+    flex-flow: column-reverse;
+    gap: 3vw;
+  }
+  .guarantee__bot-right {
+    width: 100%;
+  }
+  .guarantee__bot-left {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+  }
+  .guarantee-bot__subtitle {
+    font-size: 4.8vw;
+  }
+
+  .guarantee__bot-box ul li,
+  .guarantee__bot-box ul li strong {
+    font-size: 4.5vw;
+  }
+  .guarantee__bot-box br {
+    display: none;
+  }
+  .guarantee__bot-box {
+    padding: 4% 4% 4% 6%;
+  }
+  .booking-link {
+    font-size: 4.5vw;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+}

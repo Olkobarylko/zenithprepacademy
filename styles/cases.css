@@ -1,0 +1,372 @@
+.cases {
+  padding: 30% 0% 5% 0%;
+  position: relative;
+}
+.cases__wrapper {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  width: 75%;
+  position: relative;
+}
+.cases__top-container {
+  display: flex;
+  align-self: end;
+  width: 71%;
+}
+.cases__top-content {
+  display: flex;
+  flex-flow: column;
+}
+.cases__title {
+  font-family: "Bebas Neue Pro", Sans-serif;
+  font-size: 4.167vw;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #0e2242;
+  line-height: 1;
+  text-align: end;
+  margin-bottom: 3vw;
+}
+.cases__text-block {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+}
+.cases__text-block p {
+  text-align: end;
+  font-family: "EB Garamond", Sans-serif;
+  font-size: 1.563vw;
+  line-height: 1.2em;
+  color: #0e2242;
+}
+.cases__text-block a {
+  font-family: "EB Garamond", Sans-serif;
+  font-size: 1.563vw;
+  line-height: 1.2em;
+  color: rgb(0, 0, 238);
+}
+.cases__divider {
+  display: flex;
+  align-self: center;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.cases__divider img {
+  width: 1.5vw !important;
+  object-fit: cover;
+  height: 100%;
+}
+.cases__bot-container {
+  width: 87%;
+  margin: 0 auto;
+  position: relative;
+}
+.cases__bot-text-block {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin-bottom: 5%;
+}
+.cases__bot-title {
+  font-family: "Bebas Neue Pro", Sans-serif;
+  font-size: 2.604vw;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #0e2242;
+  line-height: 1;
+}
+.cases__bot-text {
+  font-family: "Bebas Neue Pro", Sans-serif;
+  font-size: 4.167vw;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #0e2242;
+  line-height: 1;
+}
+.cases__boxes-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.cases__box {
+  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.25);
+  padding: 0% 0% 3% 0%;
+  width: 49%;
+}
+.cases__box-yellow {
+  background-color: #ebb858;
+  padding: 4% 0% 4% 6%;
+  border-style: solid;
+  border-width: 0px 0px 5px 0px;
+  border-color: #0e2242;
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 20px;
+}
+.cases__yellow-title {
+  font-family: "Bebas Neue Pro", Sans-serif;
+  font-size: 1.823vw;
+  font-weight: 400;
+  color: #0e2242;
+  line-height: 1;
+}
+.cases__benefits {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+.cases__benefits ul {
+  padding: 0% 15% 0% 6%;
+}
+.cases__benefits ul li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.cases__benefits ul li p {
+  font-family: "EB Garamond", Sans-serif;
+  font-size: 1.146vw;
+  font-weight: 400;
+  line-height: 1.1em;
+  color: #0e2242;
+}
+.cases__legend {
+  font-family: "Bebas Neue Pro", Sans-serif;
+  font-size: 1.563vw;
+  font-weight: 700;
+  color: #0e2242;
+  line-height: 1;
+  padding-left: 5%;
+}
+.dot-wrapper svg {
+  width: 7px;
+  height: 7px;
+}
+
+.cases__divider-solid {
+  border-bottom: 1px solid #000;
+  width: 92%;
+  margin: 5% auto 5%;
+}
+.cases__line-arrow {
+  margin-top: 6%;
+  max-width: 90%;
+  width: 100%;
+  margin: 6% auto 0;
+}
+.cases__line-arrow.arrow-2 {
+  padding-top: 23px;
+}
+.cases__last-image {
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+}
+.cases__philosophy {
+  width: 90%;
+  margin: 5% auto 5%;
+}
+.cases-phi-text {
+  text-align: center;
+  font-family: "EB Garamond", Sans-serif;
+  font-size: 1.302vw;
+  font-weight: 400;
+  color: #0e2242;
+}
+.cases-phi-text i {
+  font-style: italic;
+}
+.cta-main.cta-cases {
+  align-self: center;
+  max-width: 40.5%;
+  margin: 0 auto;
+}
+.cases__left-arrow {
+  position: absolute;
+  left: -3vw;
+  bottom: 2.7vw;
+  width: 100%;
+  max-width: 32.7%;
+}
+
+.cases__right-arrow {
+  position: absolute;
+  right: -3vw;
+  bottom: 2.7vw;
+  width: 100%;
+  max-width: 32.7%;
+}
+
+.cases__left-arrow img,
+.cases__right-arrow img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.cases__bg {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.cases__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cases-img-mobile {
+  display: none;
+}
+
+@media (width <= 1023px) {
+  .cases__right-arrow,
+  .cases__left-arrow {
+    display: none;
+  }
+  .cases__wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+  .cases__title {
+    font-size: 5.5vw;
+  }
+  .cases__text-block p,
+  .cases__text-block a {
+    font-size: 2.5vw;
+  }
+  .cases__divider img {
+    width: 2.5vw !important;
+  }
+  .cases__bot-title {
+    font-size: 3.5vw;
+  }
+  .cases__bot-text {
+    font-size: 5.5vw;
+  }
+  .cases__yellow-title {
+    font-size: 2.4vw;
+  }
+  .cases__legend {
+    font-size: 2.3vw;
+  }
+  .cases__benefits ul li p {
+    font-size: 1.9vw;
+  }
+  .cases__line-arrow.arrow-2 {
+    padding-top: 44px;
+  }
+  .cases__benefits {
+    gap: 15px;
+  }
+  .cases__benefits ul {
+    padding: 0% 12% 0% 9%;
+  }
+  .cases-phi-text {
+    font-size: 2vw;
+  }
+  .cases__philosophy {
+    width: 100%;
+  }
+  .cta-main.cta-cases {
+    font-size: 2vw;
+    height: 6.5vw;
+    max-width: 46%;
+  }
+  .cases {
+    padding: 44% 0% 0% 0%;
+  }
+}
+
+@media (width <= 768px) {
+  .cases {
+    padding: 114% 0% 0% 0%;
+  }
+  .cases-img-desktop {
+    display: none;
+  }
+  .cases-img-mobile {
+    display: block;
+  }
+  .cases__title {
+    font-size: 11vw;
+    line-height: 0.9em;
+  }
+  .cases__text-block p,
+  .cases__text-block a {
+    font-size: 5.7vw;
+    line-height: 1.15em;
+  }
+  .cases__top-container {
+    width: 100%;
+  }
+  .cases__text-block {
+    gap: 0;
+  }
+  .cases__divider img {
+    width: 7vw !important;
+  }
+  .cases__bot-title {
+    font-size: 8vw;
+  }
+  .cases__bot-text {
+    font-size: 12vw;
+    text-align: center;
+  }
+  .cases__bot-container {
+    width: 100%;
+  }
+  .cases__boxes-wrapper {
+    flex-flow: column;
+    gap: 5vw;
+  }
+  .cases__box {
+    width: 100%;
+  }
+  .cases__yellow-title {
+    font-size: 7vw;
+    text-align: center;
+  }
+  .cases__box-yellow {
+    padding: 7% 0% 7% 0%;
+    border-width: 0px 0px 15px 0px;
+  }
+
+  .cases__legend {
+    font-size: 8vw;
+  }
+  .cases__benefits ul li p {
+    font-size: 5vw;
+    line-height: 1.1em;
+  }
+  .cases__last-image {
+    max-width: 87%;
+  }
+  .cases__box {
+    padding: 0% 0% 9% 0%;
+  }
+  .cases__benefits ul li {
+    align-items: start;
+  }
+  .dot-wrapper {
+    padding-top: 1.5%;
+  }
+  .cases__box {
+    background: #fff;
+  }
+  .cases-phi-text {
+    font-size: 5vw;
+  }
+  .cases__philosophy {
+    width: 91%;
+    margin: 12% auto 9%;
+  }
+  .cta-main.cta-cases {
+    height: 60px;
+    font-size: 5vw;
+    max-width: 90%;
+  }
+  .cases__bg img {
+    height: auto;
+  }
+}

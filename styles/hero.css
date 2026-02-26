@@ -89,7 +89,7 @@
 }
 
 @media (max-width: 768px) {
-  .cta-main {
+  .cta-main.hero-cta {
     width: 100%;
     max-width: 100%;
 
@@ -170,7 +170,6 @@
   .cta-main.hero-cta {
     width: 100%;
     max-width: 100%;
-
     font-size: 5vw;
     display: flex;
     margin-top: 0;

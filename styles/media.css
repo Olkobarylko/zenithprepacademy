@@ -67,6 +67,7 @@
   grid-template-columns: 32.3979vw 35.7097vw;
   gap: 3.9583vw;
   align-items: start;
+  justify-content: center;
 }
 
 .media__lead {
@@ -162,6 +163,26 @@
 
 .media__column--left-arrow img {
   width: 4.5vw;
+  transform-origin: center;
+  animation: media-arrow-wiggle 1.2s ease-in-out infinite;
+}
+
+@keyframes media-arrow-wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: rotate(-6deg);
+  }
+  75% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .media__column--right {

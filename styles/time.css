@@ -1,0 +1,246 @@
+.time {
+  position: relative;
+  z-index: 12;
+  padding: 5% 0% 2% 0%;
+}
+.time__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+.time__wrapper {
+  display: flex;
+  flex-flow: column;
+}
+
+.time__main-image {
+  width: 62.5vw;
+  margin: 0 auto;
+}
+.time__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+  position: relative;
+}
+.time__grey-left {
+  width: 46%;
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+.time__grey-block-wrapper {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.time__grey-right .time__grey-block__content {
+  align-self: end;
+}
+.time__grey-left .time__grey-block__content {
+  align-self: start;
+}
+.time__grey-right .time__grey-block-wrapper {
+  padding: 1.5% 10% 1.5% 25%;
+}
+.time__grey-left .time__grey-block-wrapper {
+  padding: 1.5% 10% 1.5% 25%;
+}
+.time-title-01 {
+  font-weight: 700;
+  font-size: 2.396vw;
+  font-family: "Bebas Neue Pro", sans-serif;
+  color: #0e2242;
+}
+.time-title-01 sup {
+  font-size: 1.25vw;
+  vertical-align: super;
+}
+.time-title-02 {
+  font-size: 1.563vw;
+  font-weight: 400;
+  color: #0e2242;
+  line-height: 1.4em;
+  font-family: "EB Garamond", Sans-serif;
+}
+.time-text {
+  font-family: "EB Garamond", Sans-serif;
+  font-size: 1.25vw;
+  font-weight: 500;
+  line-height: 1.4em;
+  color: #0e2242;
+}
+
+.time__golden-left {
+  background-image: url(../images/golden-bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.time__golden-left__item {
+  padding: 3% 0% 56% 30%;
+  position: relative;
+}
+.time__golden-title {
+  color: #ffffff;
+  font-family: "Bebas Neue Pro", Sans-serif;
+  font-size: 2.344vw;
+  font-weight: 700;
+  line-height: 1;
+  white-space: pre-wrap;
+}
+.time__golden-text {
+  justify-content: start;
+  color: #ffffff;
+  font-family: "EB Garamond", Sans-serif;
+  font-size: 1.25vw;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+
+.time__grey-right {
+  width: 46%;
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+.time__golden-right {
+  background-image: url(../images/golden-bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.time__golden-right__item {
+  padding: 3% 0% 56% 52%;
+  position: relative;
+}
+
+.time__centered-image {
+  position: absolute;
+  width: 51.3%;
+  transform: translateX(-50%);
+  top: -11%;
+  left: 53%;
+}
+.time__mobile-boy,
+.time__mobile-girl {
+  display: none;
+}
+
+@media (width <= 1024px) {
+  .time-title-01 {
+    font-size: 3vw;
+  }
+  .time-title-02 {
+    font-size: 2vw;
+  }
+  .time-text {
+    font-size: 2vw;
+    line-height: 1.2em;
+  }
+  .time__golden-title {
+    font-size: 4vw;
+  }
+  .time__golden-text {
+    font-size: 2vw;
+  }
+  .time__centered-image {
+    width: 41%;
+    transform: translateX(-50%);
+    top: 1%;
+  }
+}
+
+@media (width <= 768px) {
+  .time__centered-image {
+    display: none;
+  }
+  .time__inner {
+    flex-flow: column;
+    padding: 0 5%;
+    gap: 6vw;
+  }
+  .time__grey-left {
+    width: 100%;
+  }
+  .time__grey-right {
+    width: 100%;
+  }
+  .time-title-01 {
+    font-size: 13vw;
+    line-height: 1;
+  }
+  .time-title-01 sup {
+    font-size: 75%;
+  }
+  .time-title-02 {
+    font-size: 5.5vw;
+  }
+  .time__grey-left .time__grey-block-wrapper {
+    padding: 5%;
+  }
+  .time-text {
+    font-size: 5vw;
+  }
+  .time__golden-left__item {
+    padding: 10% 0% 15% 0%;
+  }
+  .time__golden-title {
+    font-size: 12vw;
+    text-align: center;
+  }
+  .time__golden-left__item {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+  }
+  .time__golden-text {
+    font-size: 6vw;
+    text-align: center;
+  }
+  .time__grey-left {
+    position: relative;
+    padding-top: 48%;
+    z-index: 12;
+  }
+  .time__mobile-boy {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  .time__grey-right .time__grey-block-wrapper {
+    padding: 5%;
+  }
+  .time__golden-right__item {
+    padding: 10% 0% 25% 0%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .time__main-image {
+    width: 87vw;
+  }
+  .time {
+    padding: 10% 0% 2% 0%;
+  }
+  .time__grey-right {
+    position: relative;
+    padding-top: 69%;
+    z-index: 12;
+  }
+  .time__mobile-girl {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}

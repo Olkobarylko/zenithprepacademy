@@ -1,0 +1,87 @@
+.carousel {
+  padding-top: 10%;
+  background: #fff;
+  overflow: hidden;
+}
+
+.carousel__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.carousel__title {
+  font-family: "EB Garamond", Sans-serif;
+  font-size: 1.563vw;
+  font-weight: 500;
+  color: #0E2242;
+  line-height: 1;
+}
+
+.carousel__container {
+  width: 100vw;
+  margin: 3% 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel__track {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: max-content;
+  will-change: transform;
+}
+
+.carousel__img {
+  height: 100px;
+  width: auto;
+  display: block;
+  flex: 0 0 auto;
+}
+
+.cta-main.carousel-cta {
+  max-width: 35%;
+  width: 100%;
+}
+
+@media (width <= 1024px) {
+  .carousel__title {
+    font-size: 2.5vw;
+  }
+
+  .cta-main.carousel-cta {
+    font-size: 2vw;
+    height: 6.5vw;
+    max-width: 47%;
+  }
+
+  .carousel__container {
+    margin: 5% 0;
+  }
+}
+
+@media (width <= 768px) {
+  .carousel__title {
+    font-size: 6.5vw;
+    line-height: 1.3em;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Bebas Neue Pro", sans-serif;
+  }
+
+  .carousel__wrapper {
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .cta-main.carousel-cta {
+    font-size: 4.5vw;
+    height: 60px;
+    max-width: 90%;
+  }
+}

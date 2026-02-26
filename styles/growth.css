@@ -1,8 +1,8 @@
 .growth {
-  overflow: hidden;
   position: relative;
   padding: 0;
   margin-top: -10vw;
+  overflow-x: clip;
 }
 
 .growth__bg-shape {
