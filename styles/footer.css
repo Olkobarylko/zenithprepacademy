@@ -79,13 +79,20 @@
   opacity: 0.3;
 }
 .footer__contact-left {
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
+  display: flex;
+  flex-flow: column;
+  gap: 1.35vw;
+}
+.footer__contact-left__item {
   display: flex;
   gap: 10px;
 }
+
 .icon-wrapper {
   margin-right: 0.3vw;
   padding-top: 1.2%;
+  display: flex;
 }
 .e-fas-map-marker-alt {
   fill: #00000066;
@@ -294,7 +301,10 @@
   display: none;
 }
 
-@media (width <= 767px) {
+@media (width <= 768px) {
+  .footer__contact-left__item:first-child {
+    margin-bottom: 7%;
+  }
   .footer__container {
     display: flex;
     flex-flow: column;
@@ -526,9 +536,7 @@
     width: 4.5vw;
     height: 4.5vw;
   }
-  .footer__contact-left-text br {
-    display: none;
-  }
+
   .footer__contact-row {
     padding: 0;
     width: 80%;
@@ -598,5 +606,12 @@
   }
   .footer__credits-logo {
     max-width: 33vw;
+  }
+  .footer__contact-left {
+    padding: 10px;
+    gap: 0;
+  }
+  .footer__contact-link:first-child {
+    margin-bottom: 7%;
   }
 }

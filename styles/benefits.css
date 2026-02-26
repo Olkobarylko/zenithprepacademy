@@ -16,6 +16,13 @@
   z-index: -1;
   pointer-events: none;
 }
+
+.benefits__decor {
+  position: absolute;
+  width: 14.896vw;
+  right: -6.3vw;
+  bottom: -11vw;
+}
 .benefits__wrapper {
   display: flex;
   flex-flow: column;
@@ -49,6 +56,8 @@
   display: flex;
   flex-flow: row wrap;
   margin-bottom: 20px;
+  justify-content: center;
+  position: relative;
 }
 .benefits__figure {
   width: 100%;
@@ -56,7 +65,7 @@
   position: relative;
 }
 .benefits__item-container {
-  width: 16.6%;
+  width: 20%;
 }
 .benefits__figcaption {
   color: #ffffff;
@@ -156,31 +165,30 @@
   padding: 10px;
 }
 .benefits__iframe-wrapper {
-      position: absolute;
-    width: 100%;
-    max-width: 65%;
-    height: auto;
-    top: -45%;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  width: 100%;
+  max-width: 65%;
+  height: auto;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (width <= 1600px) {
   .benefits__iframe-wrapper {
-    top: -47%;
-        height: 715px;
-        width: 100%;
-        max-width: 90%;
+    top: -43%;
+    height: 715px;
+    width: 100%;
+    max-width: 90%;
   }
 }
-
 
 @media (width <= 1440px) {
   .benefits {
     padding: 30% 0% 8% 0%;
   }
   .benefits__iframe-wrapper {
-    top: -58%;
+    top: -50%;
   }
 }
 
@@ -215,10 +223,15 @@
   .benefits__text {
     font-size: 2.2vw;
   }
+  .benefits__decor {
+    right: -2.3vw;
+    bottom: -8vw;
+  }
 }
 
 @media (width <= 768px) {
-  .benefits__subtitle {
+  .benefits__subtitle,
+  .benefits__decor {
     display: none;
   }
   .benefits {

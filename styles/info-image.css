@@ -200,6 +200,9 @@
   .info-image {
     padding: 9.2308vw 0 15.3846vw;
   }
+  .info-image__lead br {
+    display: none;
+  }
 
   .info-image__wrapper {
     width: 90.8718vw;

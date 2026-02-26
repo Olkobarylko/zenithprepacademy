@@ -30,13 +30,13 @@
 .carousel__track {
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 80px;
   width: max-content;
   will-change: transform;
 }
 
 .carousel__img {
-  height: 100px;
+  height: 80px;
   width: auto;
   display: block;
   flex: 0 0 auto;

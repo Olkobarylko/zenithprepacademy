@@ -2,6 +2,15 @@
   padding: 30% 0% 5% 0%;
   position: relative;
 }
+
+.cta-main.cases-top-cta {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2%;
+  width: 30%;
+}
+
 .cases__wrapper {
   display: flex;
   flex-flow: column;
@@ -220,6 +229,12 @@
 }
 
 @media (width <= 1023px) {
+  .cta-main.cases-top-cta {
+    font-size: 2vw;
+    height: 6.5vw;
+    max-width: 100%;
+    width: 38%;
+  }
   .cases__right-arrow,
   .cases__left-arrow {
     display: none;
@@ -368,5 +383,12 @@
   }
   .cases__bg img {
     height: auto;
+  }
+  .cta-main.cases-top-cta {
+    font-size: 5vw;
+    height: 60px;
+    max-width: 100%;
+    width: 90%;
+    top: 5%;
   }
 }
