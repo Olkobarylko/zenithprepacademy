@@ -1,0 +1,143 @@
+.modal-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    visibility 0s linear 0.3s;
+}
+
+.modal-popup.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0.3s ease;
+}
+
+.modal-popup__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.modal-popup__container {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  max-width: 700px;
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  height: fit-content;
+  opacity: 0;
+  transform: translateY(14px) scale(0.98);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.modal-popup.is-open .modal-popup__overlay {
+  opacity: 1;
+}
+
+.modal-popup.is-open .modal-popup__container {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.modal-popup__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.modal-popup__steps-wrapper {
+  width: 100%;
+  padding: 40px 56px 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-popup__steps {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Areal";
+}
+
+.modal-popup__line {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  right: 40px;
+  height: 3px;
+  background: #aeb6bf;
+  z-index: 1;
+}
+
+.modal-popup__step {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.modal-popup__circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #d9dde2;
+  border: 3px solid #aeb6bf;
+}
+
+.modal-popup__step--active .modal-popup__circle {
+  background: #fff;
+  border-color: #ff6a3d;
+}
+
+.modal-popup__label {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #3c4b5c;
+  font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  .modal-popup {
+    padding: 10px;
+  }
+
+  .modal-popup__container {
+    max-height: calc(100vh - 20px);
+  }
+
+  .modal-popup__steps-wrapper {
+    padding: 40px 16px 16px;
+  }
+
+  .modal-popup__steps {
+    display: none;
+  }
+}

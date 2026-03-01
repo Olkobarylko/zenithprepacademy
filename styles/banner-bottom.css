@@ -1,3 +1,7 @@
+
+
+
+
 .banner-bottom {
     position: relative;
     z-index: 2;
@@ -24,7 +28,7 @@
 .benefits__banner-text {
     text-align: center;
     font-family: "EB Garamond", Sans-serif;
-    font-size: 1.563vw;
+    font-size: 30px;
     font-weight: 400;
     color: #FFFFFF;
     margin-bottom: 16px;
@@ -52,14 +56,14 @@
         width: 100%;
     }
     .benefits__banner-text {
-        font-size: 2.3vw;
+        font-size: 24px;
     }
     .benefits__banner-text-block {
         padding: 3% 10% 5% 10%;
     }
     .cta-main.benefits-banner {
-        font-size: 2vw;
-                height: 6.5vw;
+        font-size: 20px;
+                height: 66px;
                 max-width: 52%;
                 margin-top: -6%;
     }
@@ -70,10 +74,10 @@
         padding: 6% 6% 9% 6%;
     }
      .benefits__banner-text {
-        font-size: 4.5vw;
+        font-size: 18px;
     }
     .cta-main.benefits-banner {
-        font-size: 4.5vw;
+        font-size: 18px;
         max-width: 90%;
         height: 60px;
         margin-top: -10%;

@@ -1,7 +1,7 @@
 .growth {
   position: relative;
   padding: 0;
-  margin-top: -10vw;
+  margin-top: -200px; 
   overflow-x: clip;
 }
 
@@ -9,7 +9,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;   
   height: 100%;
   overflow: hidden;
   z-index: 0;
@@ -24,21 +24,22 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 12.7vw 0 7.9556vw;
+  padding: 244px 0 152px; 
 }
 
 .growth__intro {
-  width: 39.2347vw;
-  margin: 0 auto 1.3978vw;
+  max-width: 755px; 
+  width: 100%;
+  margin: 0 auto 25px; 
   text-align: center;
 }
 
 .growth__intro-text {
   color: #0e2242;
   font-family: "EB Garamond", serif;
-  font-size: 1.5625vw;
+  font-size: 30px;   
   font-weight: 500;
-  line-height: 1.8757vw;
+  line-height: 36px; 
 }
 
 .growth__intro-text strong {
@@ -46,45 +47,46 @@
 }
 
 .growth__achievements {
-  width: 55.9465vw;
+  max-width: 1075px; 
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 4.0833vw;
+  gap: 80px; 
 }
 
 .growth__achievement {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 0.2778vw;
-  padding-top: 1.4vw;
+  gap: 5px;       
+  padding-top: 25px; 
 }
 
 .growth__achievement-rank {
   color: #ebb858;
   font-family: "EB Garamond", serif;
-  font-size: 1.9792vw;
+  font-size: 38px;  
   font-weight: 600;
-  line-height: 2.3757vw;
+  line-height: 45px; 
   margin: 0;
 }
 
 .growth__achievement-desc {
   color: #0e2242;
   font-family: "EB Garamond", serif;
-  font-size: 1.25vw;
+  font-size: 24px; 
   font-weight: 600;
-  line-height: 1.5vw;
+  line-height: 30px; 
   margin: 0;
-  max-width: 19.3271vw;
+  max-width: 370px; 
 }
 
 .growth__achievement-logo {
-  flex: 0 0 6.9792vw;
-  width: 6.9792vw;
-  height: 6.9792vw;
+  flex: 0 0 134px; 
+  width: 134px;
+  height: 134px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,11 +99,12 @@
 }
 
 .growth__main-image {
-  width: 41.4201vw;
-  height: 25.1056vw;
-  margin: 0 auto 3.2639vw;
+  max-width: 795px; 
+  width: 100%;
+  aspect-ratio: 795 / 480; 
+  margin: 0 auto 65px; 
   position: relative;
-  padding-left: 1vw;
+  padding-left: 20px; 
 }
 
 .growth__image {
@@ -112,8 +115,8 @@
 }
 
 .growth__bottom-image {
-  width: 44.3924vw;
-  height: 5.2563vw;
+  max-width: 850px; 
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -131,8 +134,8 @@
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 1.4993vw;
-  height: 3.8736vw;
+  width: 30px;  
+  height: 75px; 
 }
 
 .growth__bg {
@@ -150,7 +153,72 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1440px) {
+  .growth {
+    margin-top: -144px; 
+  }
+
+  .growth__wrapper {
+    padding: 185px 0 115px; 
+  }
+
+  .growth__intro {
+    max-width: 565px;
+    margin-bottom: 20px;
+  }
+
+  .growth__intro-text {
+    font-size: 22px;  
+    line-height: 27px; 
+  }
+
+  .growth__achievements {
+    max-width: 805px;
+    gap: 60px;
+  }
+
+  .growth__achievement {
+    gap: 4px;
+    padding-top: 20px;
+  }
+
+  .growth__achievement-rank {
+    font-size: 28px;  
+    line-height: 35px; 
+  }
+
+  .growth__achievement-desc {
+    font-size: 18px;
+    line-height: 22px; 
+    max-width: 280px;
+  }
+
+  .growth__achievement-logo {
+    flex: 0 0 100px; 
+    width: 100px;
+    height: 100px;
+  }
+
+  .growth__main-image {
+    max-width: 595px;
+    aspect-ratio: 595 / 360;
+    margin-bottom: 45px;
+    padding-left: 15px;
+  }
+
+  .growth__bottom-image {
+    max-width: 640px;
+  }
+
+  .growth__pointer {
+    width: 22px; 
+    height: 55px; 
+  }
+}
+
+
+@media (max-width: 767px) {
   .growth__bottom-image img:first-child {
     display: none;
   }
@@ -161,6 +229,7 @@
 
   .growth {
     padding: 0;
+    margin-top: -40px; 
   }
 
   .growth__bg-shape {
@@ -168,16 +237,16 @@
   }
 
   .growth__wrapper {
-    padding: 5% 2.5641% 15%;
+    padding: 20px 10px 60px; 
   }
 
   .growth__intro {
     width: 100%;
-    margin-bottom: 8%;
+    margin-bottom: 30px; 
   }
 
   .growth__intro-text {
-    font-size: 6vw;
+    font-size: 24px; 
     line-height: 1.2em;
   }
 
@@ -186,17 +255,18 @@
   }
 
   .growth__achievements {
-    width: 90%;
+    width: 90%; 
     flex-direction: column;
     align-items: center;
     gap: 0;
-    margin-bottom: 1%;
+    margin-bottom: 4px; 
   }
 
   .growth__achievement {
     order: 2;
     text-align: center;
-    gap: 1.5385vw;
+    gap: 6px; 
+    padding-top: 0; 
   }
 
   .growth__achievement--left {
@@ -208,40 +278,41 @@
   }
 
   .growth__achievement-rank {
-    font-size: 6vw;
+    font-size: 24px; 
     line-height: 1.2em;
   }
 
   .growth__achievement-desc {
-    font-size: 6vw;
+    font-size: 24px; 
     line-height: 1.2em;
     max-width: none;
   }
 
   .growth__achievement-logo {
     order: 0;
-    flex: 0 0 30.9744vw;
-    width: 30.9744vw;
-    height: 30.9744vw;
+    flex: 0 0 120px; 
+    width: 120px;
+    height: 120px;
   }
 
   .growth__main-image {
-    width: 94.3077vw;
-    height: 58.5641vw;
-    margin-bottom: 4%;
-    padding-left: 0vw;
+    width: 100%;
+    max-width: none;
+    aspect-ratio: 370 / 230; 
+    margin-bottom: 15px; 
+    padding-left: 0;
   }
 
   .growth__bottom-image {
-    width: 83.8462vw;
-    height: 13.6513vw;
+    width: 100%;
+    max-width: none;
   }
 
   .growth__pointer {
-    bottom: inherit;
-    top: calc(100% - 8vw);
-    width: 5.2381vw;
-    height: 13.5385vw;
+    bottom: auto;
+    top: calc(100% - 30px); 
+    width: 20px;  
+    height: 55px; 
   }
 
   .growth__bg {

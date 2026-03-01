@@ -1,7 +1,5 @@
-/* HEADER START */
-
 .header {
-  height: 4.8306vw;
+  height: 94px;
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -10,7 +8,8 @@
 }
 
 .header__wrapper {
-  width: 94.6111vw;
+  max-width: 1885px;
+  padding: 0 20px;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -19,8 +18,8 @@
 }
 
 .header__logo {
-  width: 9.1708vw;
-  height: 2.4438vw;
+  width: 179px;
+  height: 48px;
   flex: 0 0 auto;
 }
 
@@ -32,26 +31,27 @@
 }
 
 .header__media {
-  width: 42.5188vw;
-  margin-left: 22.6326vw;
+  max-width: 829px;
+  margin-left: auto;
   display: flex;
   align-items: center;
 }
 
 .header__media-label {
-  width: 4.4785vw;
+  width: 87px;
   font-family: Arial, sans-serif;
-  font-size: 0.7292vw;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 0.7292vw;
+  line-height: 14px;
   color: #000;
+  text-wrap: nowrap;
 }
 
 .header__image-list {
-  margin-left: 1.7083vw;
+  margin-left: 33px;
   display: flex;
   align-items: center;
-  gap: 1.3889vw;
+  gap: 27px;
 }
 
 .header__image-item {
@@ -59,33 +59,33 @@
 }
 
 .header__image-item--1 {
-  width: 5.0188vw;
-  height: 1.8174vw;
+  max-width: 98px;
+  height: 35px;
 }
 
 .header__image-item--2 {
-  width: 2.0278vw;
-  height: 2.0278vw;
+  max-width: 40px;
+  height: 40px;
 }
 
 .header__image-item--3 {
-  width: 4.5909vw;
-  height: 1.8514vw;
+  max-width: 90px;
+  height: 36px;
 }
 
 .header__image-item--4 {
-  width: 5.0188vw;
-  height: 1.7917vw;
+  max-width: 98px;
+  height: 35px;
 }
 
 .header__image-item--5 {
-  width: 5.0188vw;
-  height: 1.9597vw;
+  max-width: 98px;
+  height: 38px;
 }
 
 .header__image-item--6 {
-  width: 5.0188vw;
-  height: 1.266vw;
+  max-width: 98px;
+  height: 25px;
 }
 
 .header__image-item img {
@@ -96,9 +96,9 @@
 }
 
 .header__burger {
-  width: 1.7556vw;
-  height: 1.1535vw;
-  margin-left: 0.4299vw;
+  width: 34px;
+  height: 22px;
+  margin-left: 24px;
   padding: 0;
   border: none;
   background: transparent;
@@ -111,19 +111,19 @@
 
 .header__burger-line {
   width: 100%;
-  height: 0.1505vw;
+  height: 3px;
   border-radius: 999px;
   background-color: #ebb858;
   transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .header__cta.cta-main {
-  width: 16.7132vw;
+  width: 326px;
   max-width: none;
-  height: 2.396vw;
-  margin-left: 2.084vw;
-  font-size: 0.9375vw;
-  line-height: 0.9382vw;
+  height: 47px;
+  margin-left: 41px;
+  font-size: 18px;
+  line-height: 18px;
   font-weight: 600;
 }
 
@@ -132,26 +132,58 @@
 }
 
 main {
-  padding-top: 4.8306vw;
+  padding-top: 94px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
+  .header__image-item--1 {
+    max-width: 58.8px;
+    height: 21px;
+  }
+
+  .header__image-item--2 {
+    max-width: 24px;
+    height: 24px;
+  }
+
+  .header__image-item--3 {
+    max-width: 54px;
+    height: 21.6px;
+  }
+
+  .header__image-item--4 {
+    max-width: 58.8px;
+    height: 21px;
+  }
+
+  .header__image-item--5 {
+    max-width: 58.8px;
+    height: 22.8px;
+  }
+
+  .header__image-item--6 {
+    max-width: 58.8px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 1199px) {
   .header {
     height: auto;
-    padding-top: 2.9974vw;
+    padding-top: 12px;
   }
 
   .header__wrapper {
-    width: 94.8718%;
     height: auto;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
   }
 
   .header__logo {
     order: 1;
-    width: 27.5692vw;
-    height: 7.3487vw;
+    width: 100px;
+    height: 29px;
   }
 
   .header__burger-line:nth-child(2) {
@@ -187,24 +219,24 @@ main {
 
   .header__cta.cta-main {
     order: 2;
-    margin-left: 7.4667vw;
-    width: 50.7179vw;
+    margin-left: 15px;
+    width: 198px;
     max-width: none;
-    height: 10.6128vw;
-    font-size: 3vw;
-    line-height: 3vw;
+    height: 41px;
+    font-size: 12px;
+    line-height: 12px;
   }
 
   .header__burger {
     order: 3;
-    margin-left: 2.6923vw;
-    width: 5.641vw;
-    height: 3.7059vw;
+    margin-left: 10px;
+    width: 22px;
+    height: 14px;
     position: relative;
   }
 
   .header__burger-line {
-    height: 0.4834vw;
+    height: 1.9px;
     position: static;
     transform: none;
     background-color: #ebb858;
@@ -230,72 +262,73 @@ main {
   .header__media {
     order: 4;
     width: 100%;
-    height: 10.1282vw;
-    margin-top: 2.5641vw;
+    height: 39px;
+    margin-top: 10px;
     margin-left: 0;
-    border-top: 0.2564vw solid #efefef;
+    border-top: 1px solid #efefef;
     padding: 0;
     justify-content: center;
+    margin: 0 auto;
   }
 
   .header__media-label {
-    width: 14.1103vw;
-    font-size: 2.2821vw;
+    width: 55px;
+    font-size: 9px;
     font-weight: 400;
     line-height: 1;
   }
 
   .header__image-list {
-    margin-left: 2.7615vw;
-    gap: 2.5641vw;
+    margin-left: 11px;
+    gap: 10px;
   }
 
   .header__image-item--1 {
-    width: 9.1256vw;
-    height: 3.3051vw;
+    width: 36px;
+    height: 13px;
   }
 
   .header__image-item--2 {
-    width: 4.2538vw;
-    height: 4.2538vw;
+    width: 17px;
+    height: 17px;
   }
 
   .header__image-item--3 {
-    width: 10.1vw;
-    height: 4.0718vw;
+    width: 39px;
+    height: 16px;
   }
 
   .header__image-item--4 {
-    width: 13.0256vw;
-    height: 4.6513vw;
+    width: 51px;
+    height: 18px;
   }
 
   .header__image-item--5 {
-    width: 11.0744vw;
-    height: 4.3231vw;
+    width: 43px;
+    height: 17px;
   }
 
   .header__image-item--6 {
-    width: 13.0256vw;
-    height: 3.2846vw;
+    width: 51px;
+    height: 13px;
   }
 
   .header__bottom {
     width: 100%;
-    height: 6.9103vw;
+    height: 27px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     background-color: #fff;
-    margin-bottom: 2vw;
+    margin-bottom: 8px;
   }
 
   .header__bottom::before,
   .header__bottom::after {
     content: "";
-    width: 21.6026vw;
-    border-top: 0.2564vw solid #eee;
+    width: 84px;
+    border-top: 1px solid #eee;
     position: absolute;
     top: 50%;
   }
@@ -313,8 +346,16 @@ main {
     font-size: 11px;
     font-style: italic;
     font-weight: 700;
-    line-height: 2.8205vw;
+    line-height: 11px;
     color: #000;
+  }
+
+  .header__cta.cta-main {
+    min-height: 33px;
+  }
+
+  .header__cta.cta-main {
+    margin-bottom: 10px;
   }
 }
 
@@ -342,12 +383,12 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  width: 25vw;
+  width: 488px;
   height: 100vh;
   background: #ffffffcc;
   transform: translateX(100%);
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-  padding: 4.5vw 1vw 2.2vw;
+  padding: 88px 20px 43px;
   overflow-y: auto;
 }
 
@@ -365,14 +406,14 @@ main {
 }
 
 .burger-menu__close {
-  width: 1.6vw;
-  height: 1.6vw;
+  width: 31px;
+  height: 31px;
   border: none;
   background: transparent;
   cursor: pointer;
   position: absolute;
-  top: 1.1vw;
-  right: 1.1vw;
+  top: 21px;
+  right: 21px;
 }
 
 .burger-menu__close-line {
@@ -380,7 +421,7 @@ main {
   top: 50%;
   left: 0;
   width: 100%;
-  height: 0.12vw;
+  height: 2px;
   background: #0b1f3f;
 }
 
@@ -404,7 +445,7 @@ main {
 .burger-menu__toggle,
 .burger-menu__link {
   width: 100%;
-  min-height: 2.9vw;
+  min-height: 57px;
   display: flex;
   align-items: center;
   text-align: left;
@@ -413,12 +454,12 @@ main {
   text-decoration: none;
   color: #0b1f3f;
   font-family: "Roboto", sans-serif;
-  font-size: 1.3vw;
+  font-size: 25px;
   font-weight: 400;
   line-height: 1.5;
   cursor: pointer;
-  padding: 0.4vw 0.7vw;
-  gap: 1vw;
+  padding: 8px 14px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -428,8 +469,8 @@ main {
 }
 
 .burger-menu__chevron {
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 29px;
+  height: 29px;
 }
 
 .burger-menu__chevron svg {
@@ -449,25 +490,25 @@ main {
 }
 
 .burger-menu__submenu.is-open {
-  max-height: 12vw;
+  max-height: 234px;
 }
 
 .burger-menu__submenu-link {
   display: block;
-  padding: 1.25vw 1.6vw 0;
+  padding: 24px 31px 0;
   text-decoration: none;
   color: #0b1f3f;
   font-family: "Roboto", sans-serif;
-  font-size: 1.3vw;
+  font-size: 25px;
   line-height: 1.3;
 }
 
 .burger-menu__submenu-link:last-child {
-  padding-bottom: 1.25vw;
+  padding-bottom: 24px;
 }
 
 .burger-menu__item--plain {
-  margin-top: 0.7vw;
+  margin-top: 14px;
 }
 
 .burger-menu__private-link {
@@ -475,15 +516,29 @@ main {
   text-decoration: none;
   color: #003e8f;
   font-family: "Roboto", sans-serif;
-  font-size: 1.3vw;
+  font-size: 25px;
   line-height: 1;
   letter-spacing: 0.02em;
-  padding: 0 0.5vw;
+  padding: 0 10px;
+}
+
+@media (max-width: 1200px) {
+  .header__cta.cta-main {
+    margin-left: auto;
+  }
+
+  .modal-popup__container {
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 768px) {
+  .header__wrapper {
+    justify-content: space-between;
+  }
+
   .burger-menu__item--plain {
-    padding: 5vw;
+    padding: 20px;
   }
 
   .burger-menu__panel {
@@ -508,30 +563,30 @@ main {
   .burger-menu__toggle,
   .burger-menu__link {
     min-height: 33px;
-    font-size: 6vw;
+    font-size: 23px;
     padding: 2px 4px;
     line-height: 1;
   }
 
   .burger-menu__toggle {
-    padding: 5vw;
+    padding: 20px;
   }
 
   .burger-menu__chevron {
-    width: 6vw;
-    height: 6vw;
+    width: 23px;
+    height: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .burger-menu__submenu-link {
-    font-size: 6vw;
-    padding: 4vw 8vw 2vw;
+    font-size: 23px;
+    padding: 16px 31px 8px;
   }
 
   .burger-menu__submenu-link:last-child {
-    padding: 4vw 8vw 5vw;
+    padding: 16px 31px 20px;
   }
 
   .burger-menu__submenu.is-open {
@@ -539,7 +594,7 @@ main {
   }
 
   .burger-menu__private-link {
-    font-size: 6vw;
+    font-size: 23px;
     padding: 0 4px;
   }
   .burger-menu .burger-menu__overlay {
@@ -548,13 +603,35 @@ main {
 
   .burger-menu__panel {
     width: 100%;
-    padding: 2.5vw 0 2.2vw;
+    padding: 10px 0 9px;
   }
 
   .burger-menu {
-    top: 15vw;
+    top: 70px;
   }
   main {
-    padding-top: 35%;
+    padding-top: 125px;
+  }
+}
+
+@media (max-width: 390px) {
+  .burger-menu {
+    top: 60px;
+  }
+  .header__logo {
+    width: 80px;
+    height: 23px;
+  }
+
+  .header__cta.cta-main {
+    width: 170px;
+    height: 33px;
+    font-size: 10px;
+  }
+
+  .header__bottom::before,
+  .header__bottom::after {
+    content: "";
+    width: 20%;
   }
 }

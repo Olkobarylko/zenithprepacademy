@@ -1,9 +1,12 @@
+
+
 .guarantee {
   background: #fff;
-  padding-top: 3%;
+  padding-top: 58px;
   position: relative;
   z-index: 1;
 }
+
 .guarantee::before {
   content: "";
   position: absolute;
@@ -16,84 +19,97 @@
   background-position: top center;
   pointer-events: none;
   z-index: -1;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20100'%20preserveAspectRatio='none'%3E%3Cpath%20fill='%23F9F9F9'%20d='M0,6V0h1000v100L0,6z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg...");
   transform: rotate(180deg);
   transform-origin: center;
 }
 
 .guarantee__wrapper {
-  width: 75%;
+  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
   gap: 40px;
+  padding: 0 20px;
 }
+
 .guarantee__top {
   display: flex;
 }
+
 .guarantee__top-left {
-  padding: 2% 3% 2% 2%;
+  padding: 38px 58px 38px 38px;
   width: 50%;
 }
+
 .guarantee__top-left-image {
   width: 100%;
   margin-bottom: 20px;
 }
+
 .guarantee__top-left-list {
   display: flex;
   justify-content: space-between;
 }
+
 .guarantee__top-left-list__item {
   width: 32%;
 }
+
 .guarantee__top-right {
   width: 50%;
-  padding: 0% 2% 2% 1%;
+  padding: 0 38px 38px 20px;
 }
+
 .guarantee__title {
   font-family: "Bebas Neue Pro", Sans-serif;
-  font-size: 4.167vw;
+  font-size: 80px;
   font-weight: 700;
   color: #0e2242;
   line-height: 1;
   margin-bottom: 20px;
 }
+
 .guarantee__stars-row {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
+
 .guarantee__stars-image {
-  width: 10.5vw;
+  width: 202px;
 }
+
 .guarantee__span-5 {
-  font-size: 2.297vw;
+  font-size: 44px;
   font-weight: 700;
   color: #0e2242;
   line-height: 1;
   font-family: "Bebas Neue Pro", Sans-serif;
   margin-left: 15px;
 }
+
 .guarantee__subtitle {
-  font-size: 1.823vw;
+  font-size: 35px;
   font-weight: 700;
   color: #0e2242;
   line-height: 1;
   font-family: "Bebas Neue Pro", Sans-serif;
   margin-bottom: 20px;
 }
+
 .guarantee__box {
-  margin: 1% 0% 0% 0%;
-  padding: 4%;
-  border-style: solid;
-  border-width: 2px 2px 2px 2px;
-  border-color: #ebb858;
+  margin: 20px 0 0 0;
+  padding: 78px;
+  border: 2px solid #ebb858;
   display: flex;
   flex-flow: column;
   gap: 30px;
 }
+
 .guarantee__box-text-block p {
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1.1em;
   color: #0e2242;
@@ -102,137 +118,211 @@
 .guarantee__box-text-block p strong {
   font-weight: 700;
 }
+
 .cta-main.guarantee-cta {
   width: 100%;
-  max-width: 75%;
-  margin-top: 8%;
+  margin-top: 32px;
+  max-width: 497px;
 }
 
 .guarantee__bottom {
   display: flex;
 }
+
 .guarantee__bot-left {
   width: 50%;
-  padding: 0% 2% 2% 0%;
+  padding: 0;
 }
+
 .guarantee-bot__subtitle {
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1.2em;
   color: #0e2242;
 }
+
 .guarantee__bot-box {
-  margin-top: 7%;
-  padding: 4% 2.5% 4% 3%;
-  border-style: solid;
-  border-width: 2px 2px 2px 2px;
-  border-color: #ebb858;
-  margin-bottom: 7%;
+  margin-top: 36px;
+  padding: 78px 48px 78px 58px;
+  border: 2px solid #ebb858;
+  margin-bottom: 36px;
 }
-.guarantee__bot-box ul li {
-  font-size: 1.563vw;
-  font-weight: 400;
-  line-height: 1.2em;
-  color: #0e2242;
-}
+
 .guarantee__bot-box ul {
-  margin-left: 2.5vw;
+  margin-left: 48px;
   list-style: disc;
   display: flex;
   flex-flow: column;
   gap: 30px;
 }
+
+.guarantee__bot-box ul li {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #0e2242;
+}
+
 .guarantee__bot-box ul li strong {
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.2em;
   color: #0e2242;
 }
+
 .booking-link {
   color: #0055de;
   line-height: 1.2em;
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 700;
   text-decoration: underline;
 }
+
 .guarantee__bot-right {
   width: 50%;
-  padding: 0% 2% 2% 2%;
+  padding: 0 38px 38px 38px;
 }
 
-@media (width <= 768px) {
+.guarantee__bot-right img {
+  aspect-ratio: 1/1;
+  height: auto;
+}
+
+@media (max-width: 1440px) {
+  .guarantee {
+    padding-top: 44px;
+  }
+
   .guarantee__wrapper {
-    width: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 8%;
+    max-width: 1080px;
   }
-  .guarantee__top {
-    flex-flow: column;
-  }
+
   .guarantee__top-left {
-    width: 100%;
+    padding: 28px 44px 28px 28px;
   }
+
   .guarantee__top-right {
-    width: 100%;
+    padding: 0 28px 28px 15px;
   }
+
   .guarantee__title {
-    font-size: 11vw;
+    font-size: 60px;
   }
+
   .guarantee__stars-image {
-    width: 38vw;
+    width: 150px;
   }
+
   .guarantee__span-5 {
-    font-size: 7.4vw;
+    font-size: 32px;
   }
+
   .guarantee__subtitle {
-    font-size: 5.4vw;
-    line-height: 1.2em;
+    font-size: 26px;
+  }
+
+  .guarantee__box {
+    padding: 58px;
   }
 
   .guarantee__box-text-block p {
-    font-size: 4.5vw;
+    font-size: 22px;
   }
-  .cta-main.guarantee-cta {
-    max-width: 100%;
-    font-size: 4.5vw;
-    height: 60px;
-    margin-top: 4%;
+
+  .guarantee-bot__subtitle,
+  .guarantee__bot-box ul li,
+  .guarantee__bot-box ul li strong,
+  .booking-link {
+    font-size: 22px;
+  }
+
+  .guarantee__bot-box {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    padding: 58px 36px 58px 44px;
   }
 }
 
-@media (width <= 768px) {
-  .guarantee__bottom {
-    flex-flow: column-reverse;
-    gap: 3vw;
+@media (max-width: 768px) {
+
+
+  
+  .guarantee__wrapper {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
   }
+
+  .guarantee__top {
+    flex-flow: column;
+  }
+
+  .guarantee__top-left,
+  .guarantee__top-right,
+  .guarantee__bot-left,
   .guarantee__bot-right {
     width: 100%;
   }
-  .guarantee__bot-left {
-    width: 100%;
+
+  .guarantee__top-right {
     padding: 0;
-    display: flex;
-    flex-flow: column;
-  }
-  .guarantee-bot__subtitle {
-    font-size: 4.8vw;
   }
 
+  .guarantee__bot-right {
+    padding: 0;
+  }
+
+  .guarantee__title {
+    font-size: 44px;
+  }
+
+  .guarantee__stars-image {
+    width: 148px;
+  }
+
+  .guarantee__span-5 {
+    font-size: 30px;
+  }
+
+  .guarantee__subtitle {
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  .guarantee__box-text-block p,
   .guarantee__bot-box ul li,
-  .guarantee__bot-box ul li strong {
-    font-size: 4.5vw;
-  }
-  .guarantee__bot-box br {
-    display: none;
-  }
-  .guarantee__bot-box {
-    padding: 4% 4% 4% 6%;
-  }
+  .guarantee__bot-box ul li strong,
   .booking-link {
-    font-size: 4.5vw;
-    text-align: center;
-    align-self: center;
-    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .guarantee__box {
+    padding: 20px;
+  }
+
+  .guarantee__bot-box ul {
+    margin-left: 10px;
+  }
+
+  .cta-main.guarantee-cta {
+    max-width: 100%;
+    font-size: 18px;
+    height: 60px;
+    margin-top: 16px;
+  }
+
+  .guarantee__bottom {
+    flex-flow: column-reverse;
+    gap: 12px;
+  }
+
+  .guarantee__bot-box {
+    padding: 16px 16px 16px 24px;
+  }
+
+  .guarantee__top-left {
+    padding: 0;
+    padding-bottom: 30px;
   }
 }

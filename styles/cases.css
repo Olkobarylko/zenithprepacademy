@@ -1,3 +1,4 @@
+
 .cases {
   padding: 30% 0% 5% 0%;
   position: relative;
@@ -8,7 +9,8 @@
   left: 50%;
   transform: translateX(-50%);
   top: 2%;
-  width: 30%;
+    max-width: 497px;
+    width: 100%;
 }
 
 .cases__wrapper {
@@ -29,13 +31,13 @@
 }
 .cases__title {
   font-family: "Bebas Neue Pro", Sans-serif;
-  font-size: 4.167vw;
+  font-size: 81px;
   font-weight: 700;
   letter-spacing: -0.01em;
   color: #0e2242;
   line-height: 1;
   text-align: end;
-  margin-bottom: 3vw;
+  margin-bottom: 59px;
 }
 .cases__text-block {
   display: flex;
@@ -45,13 +47,13 @@
 .cases__text-block p {
   text-align: end;
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.563vw;
+  font-size: 30px;
   line-height: 1.2em;
   color: #0e2242;
 }
 .cases__text-block a {
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.563vw;
+  font-size: 30px;
   line-height: 1.2em;
   color: rgb(0, 0, 238);
 }
@@ -62,7 +64,7 @@
   margin-bottom: 3%;
 }
 .cases__divider img {
-  width: 1.5vw !important;
+  width: 29px !important;
   object-fit: cover;
   height: 100%;
 }
@@ -79,7 +81,7 @@
 }
 .cases__bot-title {
   font-family: "Bebas Neue Pro", Sans-serif;
-  font-size: 2.604vw;
+  font-size: 51px;
   font-weight: 400;
   letter-spacing: -0.01em;
   color: #0e2242;
@@ -87,7 +89,7 @@
 }
 .cases__bot-text {
   font-family: "Bebas Neue Pro", Sans-serif;
-  font-size: 4.167vw;
+  font-size: 81px;
   font-weight: 700;
   letter-spacing: -0.01em;
   color: #0e2242;
@@ -114,7 +116,7 @@
 }
 .cases__yellow-title {
   font-family: "Bebas Neue Pro", Sans-serif;
-  font-size: 1.823vw;
+  font-size: 36px;
   font-weight: 400;
   color: #0e2242;
   line-height: 1;
@@ -134,14 +136,14 @@
 }
 .cases__benefits ul li p {
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.146vw;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1.1em;
   color: #0e2242;
 }
 .cases__legend {
   font-family: "Bebas Neue Pro", Sans-serif;
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 700;
   color: #0e2242;
   line-height: 1;
@@ -178,7 +180,7 @@
 .cases-phi-text {
   text-align: center;
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.302vw;
+  font-size: 25px;
   font-weight: 400;
   color: #0e2242;
 }
@@ -192,16 +194,16 @@
 }
 .cases__left-arrow {
   position: absolute;
-  left: -3vw;
-  bottom: 2.7vw;
+  left: -59px;
+  bottom: 53px;
   width: 100%;
   max-width: 32.7%;
 }
 
 .cases__right-arrow {
   position: absolute;
-  right: -3vw;
-  bottom: 2.7vw;
+  right: -59px;
+  bottom: 53px;
   width: 100%;
   max-width: 32.7%;
 }
@@ -230,10 +232,10 @@
 
 @media (width <= 1023px) {
   .cta-main.cases-top-cta {
-    font-size: 2vw;
-    height: 6.5vw;
-    max-width: 100%;
-    width: 38%;
+    font-size: 20px;
+    height: 66px;
+    max-width: 497px;
+    width: 100%;
   }
   .cases__right-arrow,
   .cases__left-arrow {
@@ -244,29 +246,29 @@
     padding: 10px;
   }
   .cases__title {
-    font-size: 5.5vw;
+    font-size: 56px;
   }
   .cases__text-block p,
   .cases__text-block a {
-    font-size: 2.5vw;
+    font-size: 26px;
   }
   .cases__divider img {
-    width: 2.5vw !important;
+    width: 26px !important;
   }
   .cases__bot-title {
-    font-size: 3.5vw;
+    font-size: 36px;
   }
   .cases__bot-text {
-    font-size: 5.5vw;
+    font-size: 56px;
   }
   .cases__yellow-title {
-    font-size: 2.4vw;
+    font-size: 25px;
   }
   .cases__legend {
-    font-size: 2.3vw;
+    font-size: 24px;
   }
   .cases__benefits ul li p {
-    font-size: 1.9vw;
+    font-size: 19px;
   }
   .cases__line-arrow.arrow-2 {
     padding-top: 44px;
@@ -278,14 +280,14 @@
     padding: 0% 12% 0% 9%;
   }
   .cases-phi-text {
-    font-size: 2vw;
+    font-size: 20px;
   }
   .cases__philosophy {
     width: 100%;
   }
   .cta-main.cta-cases {
-    font-size: 2vw;
-    height: 6.5vw;
+    font-size: 20px;
+    height: 66px;
     max-width: 46%;
   }
   .cases {
@@ -304,12 +306,12 @@
     display: block;
   }
   .cases__title {
-    font-size: 11vw;
+    font-size: 43px;
     line-height: 0.9em;
   }
   .cases__text-block p,
   .cases__text-block a {
-    font-size: 5.7vw;
+    font-size: 22px;
     line-height: 1.15em;
   }
   .cases__top-container {
@@ -319,13 +321,13 @@
     gap: 0;
   }
   .cases__divider img {
-    width: 7vw !important;
+    width: 27px !important;
   }
   .cases__bot-title {
-    font-size: 8vw;
+    font-size: 31px;
   }
   .cases__bot-text {
-    font-size: 12vw;
+    font-size: 47px;
     text-align: center;
   }
   .cases__bot-container {
@@ -333,13 +335,13 @@
   }
   .cases__boxes-wrapper {
     flex-flow: column;
-    gap: 5vw;
+    gap: 20px;
   }
   .cases__box {
     width: 100%;
   }
   .cases__yellow-title {
-    font-size: 7vw;
+    font-size: 27px;
     text-align: center;
   }
   .cases__box-yellow {
@@ -348,10 +350,10 @@
   }
 
   .cases__legend {
-    font-size: 8vw;
+    font-size: 31px;
   }
   .cases__benefits ul li p {
-    font-size: 5vw;
+    font-size: 20px;
     line-height: 1.1em;
   }
   .cases__last-image {
@@ -370,7 +372,7 @@
     background: #fff;
   }
   .cases-phi-text {
-    font-size: 5vw;
+    font-size: 20px;
   }
   .cases__philosophy {
     width: 91%;
@@ -378,17 +380,15 @@
   }
   .cta-main.cta-cases {
     height: 60px;
-    font-size: 5vw;
+    font-size: 20px;
     max-width: 90%;
   }
   .cases__bg img {
     height: auto;
   }
   .cta-main.cases-top-cta {
-    font-size: 5vw;
+    font-size: 20px;
     height: 60px;
-    max-width: 100%;
-    width: 90%;
-    top: 5%;
+        top: 5%;
   }
 }

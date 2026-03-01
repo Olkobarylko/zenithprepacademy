@@ -1,3 +1,6 @@
+
+
+
 .benefits {
   position: relative;
   z-index: 4;
@@ -19,9 +22,9 @@
 
 .benefits__decor {
   position: absolute;
-  width: 14.896vw;
-  right: -6.3vw;
-  bottom: -11vw;
+  width: 290px;
+  right: -123px;
+  bottom: -215px;
 }
 .benefits__wrapper {
   display: flex;
@@ -47,7 +50,7 @@
 .benefits__title {
   margin: 20px 0;
   font-family: "Bebas Neue Pro", Sans-serif;
-  font-size: 4.167vw;
+  font-size: 81px;
   color: #ffffff;
   line-height: 1;
   text-align: center;
@@ -71,7 +74,7 @@
   color: #ffffff;
   background-color: #0e224266;
   font-family: "Bebas Neue Pro", Sans-serif;
-  font-size: 1.042vw;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.02em;
   position: absolute;
@@ -90,7 +93,7 @@
   margin: 0 auto;
   text-align: center;
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 400;
   color: #ffffff;
   margin: 1em 0;
@@ -106,7 +109,7 @@
 }
 .benefits__title-left {
   font-family: "Bebas Neue Pro", Sans-serif;
-  font-size: 3.125vw;
+  font-size: 61px;
   color: #ffffff;
   margin-bottom: 20px;
   line-height: 1;
@@ -126,14 +129,14 @@
   width: 14px;
   height: 14px;
   display: flex;
-  margin-top: 0.4vw;
+  margin-top: 8px;
 }
 .benefits-icon-svg svg path {
   fill: #fed17d !important;
   transition: fill 0.3s;
 }
 .benefits-icon__text {
-  font-size: 1.354vw;
+  font-size: 26px;
   font-weight: 400;
   color: #ffffff;
   transition: color 0.3s;
@@ -151,7 +154,7 @@
   width: 8px;
   height: 8px;
   display: flex;
-  margin-top: 0.8vw;
+  margin-top: 16px;
 }
 .benefits-dot-svg svg {
   fill: #fed17d;
@@ -169,14 +172,16 @@
   width: 100%;
   max-width: 65%;
   height: auto;
-  top: -40%;
+  top: -43vw;
   left: 50%;
   transform: translateX(-50%);
 }
 
 @media (width <= 1600px) {
   .benefits__iframe-wrapper {
-    top: -43%;
+    
+      top: -50vw;
+
     height: 715px;
     width: 100%;
     max-width: 90%;
@@ -188,7 +193,9 @@
     padding: 30% 0% 8% 0%;
   }
   .benefits__iframe-wrapper {
-    top: -50%;
+    
+          top: -55vw;
+
   }
 }
 
@@ -214,18 +221,18 @@
 
 @media (width <= 1024px) {
   .benefits__figcaption {
-    font-size: 1.9vw;
+    font-size: 19px;
   }
   .benefits__wrapper {
     padding: 17% 5% 8% 5%;
     width: 100%;
   }
   .benefits__text {
-    font-size: 2.2vw;
+    font-size: 23px;
   }
   .benefits__decor {
-    right: -2.3vw;
-    bottom: -8vw;
+    right: -24px;
+    bottom: -82px;
   }
 }
 
@@ -241,19 +248,19 @@
     padding: 0;
   }
   .benefits__title {
-    font-size: 10.5vw;
+    font-size: 41px;
   }
   .benefits__item-container {
     width: 33.333%;
   }
   .benefits__figcaption {
-    font-size: 5vw;
+    font-size: 20px;
   }
   .benefits__title br {
     display: none;
   }
   .benefits__text {
-    font-size: 5.7vw;
+    font-size: 22px;
     max-width: 100%;
   }
   .benefits__list-container {
@@ -271,12 +278,12 @@
     margin-top: 5%;
   }
   .benefits__title-left {
-    font-size: 11vw;
+    font-size: 43px;
   }
   .benefits__right img {
     aspect-ratio: 4 / 3;
   }
   .benefits-icon__text {
-    font-size: 5vw;
+    font-size: 20px;
   }
 }

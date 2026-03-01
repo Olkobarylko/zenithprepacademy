@@ -1,5 +1,8 @@
+
+
+
 .video {
-  padding-top: 11%;
+  padding-top: 210px;
 }
 
 .video__inner {
@@ -8,21 +11,24 @@
   flex-flow: column;
   gap: 5px;
   padding: 10px;
-  margin-bottom: 1%;
+  margin-bottom: 20px;
 }
+
 .video__title {
   font-family: "Bebas Neue Pro", Sans-serif;
-  font-size: 4.167vw;
+  font-size: 80px;
   font-weight: 700;
   color: #0e2242;
   line-height: 1;
 }
+
 .video__text {
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 500;
   color: #0e2242;
 }
+
 .video__container {
   position: relative;
   cursor: pointer;
@@ -31,25 +37,29 @@
 .video-thumbnail img {
   aspect-ratio: 1.77777;
 }
+
 .video__play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  height: 5.885vw;
-  width: 5.885vw;
+  height: 113px;
+  width: 113px;
   transition: all 0.4s ease;
   cursor: pointer;
 }
+
 .video__play-btn:hover {
   transform: translate(-50%, -50%) scale(1.07);
 }
+
 .video__play-btn svg {
   background: #ebb858;
   border-radius: 100%;
   overflow: hidden;
 }
+
 .video__play-btn svg path {
   fill: #0e2242;
 }
@@ -107,46 +117,82 @@
   display: none;
 }
 
-@media (width <= 768px) {
+@media (max-width: 1440px) {
+  .video {
+    padding-top: 160px;
+  }
+
+  .video__title {
+    font-size: 60px;
+  }
+
+  .video__text {
+    font-size: 22px;
+  }
+
+  .video__play-btn {
+    width: 85px;
+    height: 85px;
+  }
+
+  .video__inner {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video {
+    padding-top: 50px;
+  }
+
   .video-modal__content {
     width: 94vw;
   }
+
   .video-modal__close {
     top: -40px;
   }
+
   .video__mobile-text {
     display: flex;
-    padding: 0% 6% 0% 6%;
+    padding: 0 24px;
     background-color: #f9f9f9;
-    margin: 1em 0;
+    margin: 16px 0;
   }
+
   .video__mobile-text p {
     text-align: center;
-    font-size: 5vw;
+    font-size: 20px;
     line-height: 1.3em;
     font-family: "EB Garamond", Sans-serif;
     font-weight: 500;
     color: #0e2242;
   }
+
   .video__title {
-    font-size: 10vw;
+    font-size: 40px;
     text-align: center;
-    margin-bottom: 7%;
+    margin-bottom: 18px;
   }
+
   .video__text {
-    font-size: 7vw;
+    font-size: 28px;
     line-height: 1.2em;
     text-align: center;
   }
+
   .video__inner {
-    padding: 0 5%;
-    gap: 0px;
-    margin-bottom: 4.5%;
+    padding: 0 20px;
+    gap: 0;
+    margin-bottom: 18px;
   }
-  .video {
-    padding-top: 13%;
-  }
+
   .video__container {
-    padding: 0 3%;
+    padding: 0 12px;
+  }
+
+  .video__play-btn {
+    width: 60px;
+    height: 60px;
   }
 }

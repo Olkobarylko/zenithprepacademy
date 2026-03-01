@@ -1,3 +1,6 @@
+
+
+
 .time {
   position: relative;
   z-index: 12;
@@ -17,7 +20,7 @@
 }
 
 .time__main-image {
-  width: 62.5vw;
+  max-width: 1219px;
   margin: 0 auto;
 }
 .time__inner {
@@ -50,16 +53,16 @@
 }
 .time-title-01 {
   font-weight: 700;
-  font-size: 2.396vw;
+  font-size: 47px;
   font-family: "Bebas Neue Pro", sans-serif;
   color: #0e2242;
 }
 .time-title-01 sup {
-  font-size: 1.25vw;
+  font-size: 24px;
   vertical-align: super;
 }
 .time-title-02 {
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 400;
   color: #0e2242;
   line-height: 1.4em;
@@ -67,7 +70,7 @@
 }
 .time-text {
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.25vw;
+  font-size: 24px;
   font-weight: 500;
   line-height: 1.4em;
   color: #0e2242;
@@ -86,7 +89,7 @@
 .time__golden-title {
   color: #ffffff;
   font-family: "Bebas Neue Pro", Sans-serif;
-  font-size: 2.344vw;
+  font-size: 46px;
   font-weight: 700;
   line-height: 1;
   white-space: pre-wrap;
@@ -95,7 +98,7 @@
   justify-content: start;
   color: #ffffff;
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.25vw;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.3em;
 }
@@ -131,20 +134,20 @@
 
 @media (width <= 1024px) {
   .time-title-01 {
-    font-size: 3vw;
+    font-size: 31px;
   }
   .time-title-02 {
-    font-size: 2vw;
+    font-size: 20px;
   }
   .time-text {
-    font-size: 2vw;
+    font-size: 20px;
     line-height: 1.2em;
   }
   .time__golden-title {
-    font-size: 4vw;
+    font-size: 41px;
   }
   .time__golden-text {
-    font-size: 2vw;
+    font-size: 20px;
   }
   .time__centered-image {
     width: 41%;
@@ -154,13 +157,18 @@
 }
 
 @media (width <= 768px) {
+
+  .time__main-image {
+    padding: 0 20px;
+  }
+
   .time__centered-image {
     display: none;
   }
   .time__inner {
     flex-flow: column;
     padding: 0 5%;
-    gap: 6vw;
+    gap: 23px;
   }
   .time__grey-left {
     width: 100%;
@@ -169,26 +177,26 @@
     width: 100%;
   }
   .time-title-01 {
-    font-size: 13vw;
+    font-size: 51px;
     line-height: 1;
   }
   .time-title-01 sup {
     font-size: 75%;
   }
   .time-title-02 {
-    font-size: 5.5vw;
+    font-size: 21px;
   }
   .time__grey-left .time__grey-block-wrapper {
     padding: 5%;
   }
   .time-text {
-    font-size: 5vw;
+    font-size: 20px;
   }
   .time__golden-left__item {
     padding: 10% 0% 15% 0%;
   }
   .time__golden-title {
-    font-size: 12vw;
+    font-size: 47px;
     text-align: center;
   }
   .time__golden-left__item {
@@ -197,7 +205,7 @@
     flex-flow: column;
   }
   .time__golden-text {
-    font-size: 6vw;
+    font-size: 23px;
     text-align: center;
   }
   .time__grey-left {
@@ -224,7 +232,7 @@
     align-items: center;
   }
   .time__main-image {
-    width: 87vw;
+    width: 100%;
   }
   .time {
     padding: 10% 0% 2% 0%;

@@ -1,7 +1,7 @@
 body {
   line-height: 1.45;
   background-color: #fff;
-  font-family: 'EB Garamond', 'Garamond', serif;
+  font-family: "EB Garamond", "Garamond", serif;
   font-weight: 400;
 }
 
@@ -28,26 +28,19 @@ h6 {
   font-weight: 700;
 }
 
-/* Viewport 1810 */
-.text-s {
-  font-size: 1.25vw; /* 22.625px */
-}
+
 .text-m {
-  font-size: 1.563vw; /* 28.2903px */
+  font-size: 30px;
 }
 
-.title-s {
-  font-size: 1.823vw; /* 32.9963px */
+@media (max-width: 1440px) {
+  .text-m {
+    font-size: 22px;
+  }
 }
 
-.title-m {
-  font-size: 1.98vw; /* 35.838px */
-}
-
-.title-l {
-  font-size: 2.411vw; /* 43.6391px */
-}
-
-.title-xl {
-  font-size: 4.167vw; /* 75.4227px */
+@media (max-width: 768px) {
+  .text-m {
+    font-size: 20px;
+  }
 }

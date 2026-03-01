@@ -1,20 +1,23 @@
+
 .list {
   position: relative;
   background: #0e2242;
 }
 
 .list__wrapper {
-  width: 73.6111vw;
+  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  bottom: -5vw;
+  bottom: -96px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .list__bg {
   position: absolute;
   inset: 0;
-  background-image: url("https://placehold.co/1440x614");
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -23,60 +26,61 @@
 
 .list__header {
   text-align: center;
-  margin-bottom: 4.2083vw;
+  margin-bottom: 80px;
 }
 
 .list__title {
   font-family: "Bebas Neue Pro", sans-serif;
-  font-size: 4.166vw;
+  font-size: 80px;
   font-weight: 700;
   line-height: 1;
-  letter-spacing: 0.0833vw;
+  letter-spacing: 2px;
   color: white;
-  margin: 0 0 0.578vw;
+  margin: 0 0 12px;
 }
 
 .list__intro {
   font-family: "EB Garamond", serif;
   color: white;
   margin: 0;
-  line-height: 1.5625vw;
+  line-height: 30px;
 }
 
 .list__achievements {
   list-style: none;
   padding: 0;
-  margin: 0 auto 0.3472vw;
-  width: 67.0104vw;
+  margin: 0 auto 6px;
+  max-width: 1285px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.3472vw;
+  gap: 6px;
 }
 
 .list__achievement {
   background: rgba(254, 209, 125, 0.8);
   display: flex;
   align-items: center;
-  padding: 1.0743vw 1.6089vw 1.0743vw 1.6089vw;
-  min-height: 4.275vw;
+  padding: 20px 30px;
+  min-height: 82px;
 }
 
 .list__achievement:first-child {
-  min-height: 6.5409vw;
+  min-height: 126px;
 }
 
 .list__check {
   flex-shrink: 0;
-  width: 1.3889vw;
-  height: 1.3889vw;
-  margin-right: 3.8194vw;
+  width: 26px;
+  height: 26px;
+  margin-right: 74px;
 }
 
 .list__achievement-text {
   font-family: "EB Garamond", serif;
-  font-size: 1.5625vw;
+  font-size: 30px;
   font-weight: 500;
-  line-height: 2.2667vw;
+  line-height: 44px;
   color: #0e2242;
   flex: 1;
 }
@@ -86,13 +90,14 @@
 }
 
 .list__stats {
-  width: 67.0104vw;
+  max-width: 1285px;
+  width: 100%;
   margin: 0 auto;
   background: white;
-  box-shadow: 0 2.0833vw 2.0833vw rgba(0, 0, 0, 0.08);
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.08);
   outline: 1px solid #fed17d;
   outline-offset: -1px;
-  padding: 2.0917vw 6.7vw;
+  padding: 40px 130px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: start;
@@ -104,8 +109,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.6944vw;
-  padding: 0 2.0833vw;
+  gap: 14px;
+  padding: 0 40px;
   position: relative;
 }
 
@@ -122,104 +127,176 @@
 
 .list__stat-number {
   font-family: "EB Garamond", serif;
-  font-size: 2.4097vw;
+  font-size: 46px;
   font-weight: 600;
-  line-height: 2.4097vw;
+  line-height: 46px;
   color: #ebb858;
 }
 
 .list__stat-label {
   font-family: "EB Garamond", serif;
-  font-size: 1.5625vw;
+  font-size: 30px;
   font-weight: 500;
-  line-height: 1.5625vw;
+  line-height: 30px;
   color: #0e2242;
 }
 
 .list__decoration {
   position: absolute;
-  width: 9.0625vw;
-  height: 9.0625vw;
-  right: 0.5vw;
-  bottom: 7vw;
+  width: 174px;
+  height: 174px;
+  right: 10px;
+  bottom: 134px;
   z-index: 3;
   pointer-events: none;
 }
+
 .list__decoration-mobile {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .list {
-    padding: 12.0513vw 0 17.9487vw;
-  }
-
+@media (max-width: 1440px) {
   .list__wrapper {
-    width: 90.8718vw;
-  }
-
-  .list__bg {
-    background-image: url("https://placehold.co/390x881");
+    max-width: 1080px;
+    bottom: -72px;
   }
 
   .list__header {
-    margin-bottom: 6%;
+    margin-bottom: 60px;
   }
 
   .list__title {
-    font-size: 9vw;
-        letter-spacing: 0em;
-    line-height: 9vw;
-    margin-bottom: 5.9vw;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
   }
 
   .list__intro {
-    font-size: 5vw;
-    line-height: 6vw;
-    padding: 0 3vw;
+    line-height: 22px;
   }
 
   .list__achievements {
-    width: 90.8718vw;
-    margin-bottom: 0vw;
-    gap: 1.5385vw;
+    max-width: 965px;
+    gap: 5px;
   }
 
   .list__achievement {
-    padding: 4.0308vw 4.5385vw 4.0308vw 21.2308vw;
-    min-height: 19vw;
+    padding: 16px 24px;
+    min-height: 62px;
+  }
+
+  .list__achievement:first-child {
+    min-height: 94px;
+  }
+
+  .list__check {
+    width: 20px;
+    height: 20px;
+    margin-right: 56px;
+  }
+
+  .list__achievement-text {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .list__stats {
+    max-width: 965px;
+    padding: 30px 96px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .list__stat {
+    gap: 10px;
+    padding: 0 30px;
+  }
+
+  .list__stat-number {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .list__stat-label {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .list__decoration {
+    width: 130px;
+    height: 130px;
+    right: 8px;
+    bottom: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .list {
+    padding: 48px 0 70px;
+  }
+
+  .list__wrapper {
+    max-width: 100%;
+    bottom: 0;
+  }
+
+
+  .list__header {
+    margin-bottom: 24px;
+  }
+
+  .list__title {
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin-bottom: 23px;
+  }
+
+  .list__intro {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 12px;
+  }
+
+  .list__achievements {
+    max-width: 100%;
+    gap: 6px;
+  }
+
+  .list__achievement {
+    padding: 16px 18px 16px 82px;
+    min-height: 74px;
     position: relative;
   }
 
   .list__achievement:first-child {
-    min-height: 38.7949vw;
+    min-height: 152px;
   }
 
   .list__check {
     position: absolute;
-    left: 4.5385vw;
+    left: 18px;
     top: 50%;
     transform: translateY(-50%);
-    width: 5.1282vw;
-    height: 5.1282vw;
+    width: 20px;
+    height: 20px;
     margin-right: 0;
   }
 
   .list__achievement-text {
-    font-size: 4.5128vw;
-    line-height: 4.9513vw;
+    font-size: 18px;
+    line-height: 19px;
   }
 
   .list__stats {
-    width: 90.8718vw;
-    padding: 2.5vw 0;
+    max-width: 100%;
+    padding: 10px 0;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
   }
 
   .list__stat {
-    padding: 5.1282vw 2.5vw;
-    gap: 1.2821vw;
+    padding: 20px 10px;
+    gap: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -234,27 +311,19 @@
   }
 
   .list__stat-number {
-    font-size: 8vw;
-    line-height: 8vw;
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .list__stat:nth-child(2) .list__stat-number {
-    font-size: 6.5128vw;
-    line-height: 6.5vw;
+    font-size: 26px;
+    line-height: 26px;
   }
 
   .list__stat-label {
-    font-size: 5.5128vw;
-    line-height: 5.5vw;
+    font-size: 22px;
+    line-height: 22px;
     text-align: left;
-  }
-
-  .list__decoration {
-    width: 21.7462vw;
-    height: 21.7462vw;
-    right: 3vw;
-    bottom: 31%;
-    z-index: 1000;
   }
 
   .list__decoration {
@@ -263,5 +332,8 @@
 
   .list__decoration-mobile {
     display: block;
+    width: 84px;
+    height: 84px;
+    bottom: 220px;
   }
 }

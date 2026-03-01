@@ -1,158 +1,255 @@
+
+
 .text-image {
-  padding-top: 3%;
+  padding-top: 58px;
   background-color: #f9f9f9;
   background-image: url(../images/ti-bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
+
 .ti__wrapper {
-  width: 75%;
+  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
+
 .ti__inner {
   display: flex;
 }
+
 .ti__inner-image {
   width: 50%;
-  padding: 0% 2% 2% 2%;
+  padding: 0 38px 38px 38px;
 }
+
 .ti__inner-text-block {
   width: 50%;
   display: flex;
   flex-flow: column;
-  gap: 1.5vw;
-  padding: 0% 2.5% 2% 2%;
+  gap: 30px;
+  padding: 0 48px 38px 38px;
 }
+
 .ti__inner-text-block p {
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1.15em;
   color: #0e2242;
 }
+
 .ti__bottom {
-  width: 80%;
+  max-width: 1540px;
+  width: 100%;
   margin: 0 auto;
 }
+
 .ti__bot__title {
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1.2em;
   color: #0e2242;
   text-align: center;
-  margin-top: 6%;
-  margin-bottom: 3%;
+  margin-top: 115px;
+  margin-bottom: 58px;
 }
+
 .ti__highlight-row {
   display: flex;
   flex-flow: column;
-  margin-bottom: 1.5%;
+  margin-bottom: 30px;
 }
+
 .ti__highlight {
   background: #eeeeee;
   margin-bottom: 15px;
-  padding: 1.5%;
+  padding: 30px;
 }
+
 .ti-highlight-text {
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 500;
   color: #0e2242;
   transition: color 0.3s;
 }
+
 .ti__yellow-box {
-  padding: 4% 7% 4% 7%;
-  border-style: solid;
-  border-width: 2px 2px 2px 2px;
-  border-color: #ebb858;
+  padding: 78px 134px 78px 134px;
+  border: 2px solid #ebb858;
 }
+
 .ti__yellow-box p {
   text-align: center;
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.2em;
   color: #0e2242;
 }
+
 .ti__big-text {
   text-align: center;
   font-family: "EB Garamond", Sans-serif;
-  font-size: 1.563vw;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1.2em;
   color: #0e2242;
-  padding: 0% 2.5% 0% 2.5%;
-  margin: 2.5% 0 8%;
+  padding: 0 48px;
+  margin: 48px 0 154px;
 }
+
 .cta-main.ti-cta {
   margin: 0 auto;
+  max-width: 497px;
 }
 
-@media (width <= 768px) {
-    .ti__inner {
-        flex-flow: column;
-    }
-    .ti__inner-image {
-        width: 100%;
-    }
-    .ti__inner-text-block {
-        width: 100%;
-        padding: 0;
-    }
-    .ti__wrapper {
-        width: 100%;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-bottom: 5%;
-    }
-    .text-image {
-        background-image: none;
-    }
-    .ti__inner-text-block p {
-        font-size: 5vw;
-    }
-    .ti__inner-text-block {
-        gap: 4vw;
-    }
-    .ti__bot__title {
-        font-size: 5vw;
-        text-align: left;
-    }
-    .ti__bot__title br {
-        display: none;
-    }
-    .ti__bottom {
-        width: 100%;
-    }
-    .ti__highlight {
-        padding: 5%;
+@media (max-width: 1440px) {
+  .text-image {
+    padding-top: 44px;
+  }
 
-    }
-    .ti-highlight-text {
-        font-size: 7vw;
-        line-height: 1.2em;
-    }
-    .ti__yellow-box p {
-                text-align: center;
-        font-size: 5.8vw;
+  .ti__wrapper {
+    max-width: 1080px;
+  }
 
-    }
-    .ti__yellow-box {
-        padding: 7%;
-    }
-    .ti__big-text {
-        padding: 0% 1.5% 0% 1.5%;
-        font-size: 5vw;
-        text-align: left;
-        margin: 8% 0;
-    }
-    .cta-main.ti-cta {
-        height: 60px;
-        font-size: 4.5vw;
-        width: 100%;
-        max-width: 90%;
-    }
-    
+  .ti__inner-image {
+    padding: 0 28px 28px 28px;
+  }
+
+  .ti__inner-text-block {
+    gap: 22px;
+    padding: 0 36px 28px 28px;
+  }
+
+  .ti__inner-text-block p {
+    font-size: 22px;
+  }
+
+  .ti__bottom {
+    max-width: 1150px;
+  }
+
+  .ti__bot__title {
+    font-size: 22px;
+    margin-top: 86px;
+    margin-bottom: 44px;
+  }
+
+  .ti__highlight {
+    padding: 22px;
+  }
+
+  .ti-highlight-text {
+    font-size: 22px;
+  }
+
+  .ti__yellow-box {
+    padding: 58px 100px 58px 100px;
+  }
+
+  .ti__yellow-box p,
+  .ti__big-text {
+    font-size: 22px;
+  }
+
+  .ti__big-text {
+    padding: 0 36px;
+    margin: 36px 0 115px;
+  }
 }
 
+@media (max-width: 768px) {
+
+  .ti__inner-image {
+    padding: 0;
+    padding-bottom: 30px;
+  }
+
+  .text-image {
+    background-image: none;
+  }
+
+  .ti__wrapper {
+    width: 100%;
+
+    padding-bottom: 20px;
+  }
+
+  .ti__inner {
+    flex-flow: column;
+  }
+
+  .ti__inner-image,
+  .ti__inner-text-block {
+    width: 100%;
+  }
+
+  .ti__inner-text-block {
+    padding: 0;
+    gap: 16px;
+  }
+
+  .ti__inner-text-block p {
+    font-size: 20px;
+  }
+
+  .ti__bot__title {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .ti__bot__title br {
+    display: none;
+  }
+
+  .ti__bottom {
+    width: 100%;
+  }
+
+  .ti__highlight {
+    padding: 20px;
+  }
+
+  .ti-highlight-text {
+    font-size: 28px;
+    line-height: 1.2em;
+  }
+
+  .ti__yellow-box {
+    padding: 28px;
+  }
+
+  .ti__yellow-box p {
+    font-size: 22px;
+  }
+
+  .ti__big-text {
+    padding: 0 6px;
+    font-size: 20px;
+    text-align: left;
+    margin: 30px 0;
+  }
+
+  .cta-main.ti-cta {
+    height: 60px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .text-image {
+    background-color: transparent;
+  }
+}
+
+
+@media (max-width: 479px) {
+  .ti-highlight-text {
+    font-size: 22px;
+  }
+}
