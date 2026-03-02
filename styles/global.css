@@ -3,6 +3,7 @@ body {
   background-color: #fff;
   font-family: "EB Garamond", "Garamond", serif;
   font-weight: 400;
+  text-wrap: pretty;
 }
 
 b {
@@ -27,7 +28,6 @@ h6 {
   font-family: "Bebas Neue Pro", Sans-serif;
   font-weight: 700;
 }
-
 
 .text-m {
   font-size: 30px;

@@ -1,16 +1,13 @@
-
 .cases {
   padding: 30% 0% 5% 0%;
   position: relative;
 }
 
 .cta-main.cases-top-cta {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 2%;
-    max-width: 497px;
-    width: 100%;
+  max-width: 497px;
+  width: 100%;
+  margin-left: auto;
+  margin-top: 30px;
 }
 
 .cases__wrapper {
@@ -133,6 +130,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-bottom: 8px;
 }
 .cases__benefits ul li p {
   font-family: "EB Garamond", Sans-serif;
@@ -365,9 +363,7 @@
   .cases__benefits ul li {
     align-items: start;
   }
-  .dot-wrapper {
-    padding-top: 1.5%;
-  }
+  
   .cases__box {
     background: #fff;
   }
@@ -389,6 +385,6 @@
   .cta-main.cases-top-cta {
     font-size: 20px;
     height: 60px;
-        top: 5%;
+    max-width: 100%;
   }
 }

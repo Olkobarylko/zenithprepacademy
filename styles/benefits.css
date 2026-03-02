@@ -1,6 +1,3 @@
-
-
-
 .benefits {
   position: relative;
   z-index: 4;
@@ -179,8 +176,7 @@
 
 @media (width <= 1600px) {
   .benefits__iframe-wrapper {
-    
-      top: -50vw;
+    top: -50vw;
 
     height: 715px;
     width: 100%;
@@ -193,9 +189,7 @@
     padding: 30% 0% 8% 0%;
   }
   .benefits__iframe-wrapper {
-    
-          top: -55vw;
-
+    top: -55vw;
   }
 }
 
@@ -220,6 +214,10 @@
 }
 
 @media (width <= 1024px) {
+  .benefits-dot-svg {
+    margin-top: 11.5px;
+  }
+
   .benefits__figcaption {
     font-size: 19px;
   }
@@ -234,9 +232,17 @@
     right: -24px;
     bottom: -82px;
   }
+  .benefits__ul-dot ul li {
+    gap: 20px;
+    margin-bottom: 12px;
+  }
 }
 
 @media (width <= 768px) {
+  .benefits-ul {
+    gap: 6px;
+    margin-bottom: 14px;
+  }
   .benefits__subtitle,
   .benefits__decor {
     display: none;

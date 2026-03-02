@@ -1,7 +1,7 @@
-
 .list {
   position: relative;
   background: #0e2242;
+  text-wrap: pretty;
 }
 
 .list__wrapper {
@@ -239,7 +239,6 @@
     bottom: 0;
   }
 
-
   .list__header {
     margin-bottom: 24px;
   }
@@ -252,6 +251,9 @@
   }
 
   .list__intro {
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     line-height: 24px;
     padding: 0 12px;

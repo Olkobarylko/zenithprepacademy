@@ -174,7 +174,7 @@
 }
 
 .info-image__list li + li {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .info-image__footer-text {
@@ -217,8 +217,11 @@
 }
 
 @media (max-width: 768px) {
-  .benefits__inner {
-    /* margin-top: -300px; */
+  .info-image__subtitle,
+  .info-image__question,
+  .info-image__answer-label,
+  .info-image__lead {
+    padding: 0 20px;
   }
 
   .info-image {
@@ -329,7 +332,7 @@
   }
 
   .info-image__list li + li {
-    margin-top: 5px;
+    margin-top: 8px;
   }
 
   .info-image__footer-text,
