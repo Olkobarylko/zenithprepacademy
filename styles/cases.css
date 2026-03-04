@@ -1,13 +1,15 @@
 .cases {
-  padding: 30% 0% 5% 0%;
+  padding: 750px 0% 100px 0%;
   position: relative;
 }
 
 .cta-main.cases-top-cta {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2%;
   max-width: 497px;
   width: 100%;
-  margin-left: auto;
-  margin-top: 30px;
 }
 
 .cases__wrapper {
@@ -74,7 +76,7 @@
   display: flex;
   align-items: center;
   flex-flow: column;
-  margin-bottom: 5%;
+  margin-bottom: 30px;
 }
 .cases__bot-title {
   font-family: "Bebas Neue Pro", Sans-serif;
@@ -228,12 +230,38 @@
   display: none;
 }
 
+@media (width <= 1440px) {
+  .cases {
+    padding: 850px 0% 60px 0%;
+  }
+
+  .cases__left-arrow {
+    left: -40px;
+    bottom: 30px;
+  }
+
+  .cases__right-arrow {
+    right: -40px;
+    bottom: 30px;
+  }
+}
+
+@media (width <= 1280px) {
+  .cases__top-container {
+    width: 80%;
+  }
+}
+
 @media (width <= 1023px) {
+  .cases {
+    padding: 650px 0% 60px 0%;
+  }
+
   .cta-main.cases-top-cta {
     font-size: 20px;
     height: 66px;
     max-width: 497px;
-    width: 100%;
+    width: calc(100vw - 40px);
   }
   .cases__right-arrow,
   .cases__left-arrow {
@@ -288,8 +316,8 @@
     height: 66px;
     max-width: 46%;
   }
-  .cases {
-    padding: 44% 0% 0% 0%;
+  .cases__top-container {
+    width: 71%;
   }
 }
 
@@ -305,7 +333,8 @@
   }
   .cases__title {
     font-size: 43px;
-    line-height: 0.9em;
+    line-height: 1em;
+    margin-bottom: 30px;
   }
   .cases__text-block p,
   .cases__text-block a {
@@ -320,6 +349,8 @@
   }
   .cases__divider img {
     width: 27px !important;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .cases__bot-title {
     font-size: 31px;
@@ -363,7 +394,7 @@
   .cases__benefits ul li {
     align-items: start;
   }
-  
+
   .cases__box {
     background: #fff;
   }

@@ -10,7 +10,7 @@
 
 .about__image-wrap {
   width: 70%;
-  max-width: 950px;
+  max-width: 800px;
   min-height: auto;
   position: relative;
   margin-left: auto;
@@ -22,7 +22,7 @@
   left: 5%;
   top: 5%;
   font-family: "Bebas Neue Pro", sans-serif;
-  font-size: 58px;
+  font-size: 52px;
   font-weight: 700;
   color: #0e2242;
 }
@@ -115,7 +115,7 @@
   .about__image-absolute-text {
     font-size: 48px;
     left: 7%;
-    top: 7%;
+    top: 2%;
   }
 
   .about {
@@ -127,7 +127,7 @@
   }
 
   .about__image-wrap {
-    max-width: 800px;
+    max-width: 625px;
     min-height: auto;
   }
 

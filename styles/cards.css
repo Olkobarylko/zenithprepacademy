@@ -1,13 +1,9 @@
-
-
-
-
 .cards {
-  padding: 73px 58px 107px; 
+  padding: 73px 58px 107px;
 }
 
 .cards__wrapper {
-  max-width: 1780px; 
+  max-width: 1780px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -16,10 +12,10 @@
 }
 
 .cards__header {
-  max-width: 527px; 
+  max-width: 527px;
   width: 100%;
-  aspect-ratio: 527 / 282; 
-  margin-bottom: 85px; 
+  aspect-ratio: 527 / 282;
+  margin-bottom: 85px;
 }
 
 .cards__header-image {
@@ -33,12 +29,12 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 27px 45px;       
-  padding: 13px 27px;   
+  gap: 27px 45px;
+  padding: 13px 27px;
 }
 
 .cards__item {
-  width: 100%;
+  width: fit-content;
   overflow: hidden;
 }
 
@@ -46,21 +42,24 @@
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 
+.cards__image img {
+  object-fit: contain;
+}
 
 @media (max-width: 1440px) {
   .cards {
-    padding: 55px 42px 80px; 
+    padding: 55px 42px 80px;
   }
 
   .cards__wrapper {
-    max-width: 1335px; 
+    max-width: 1335px;
   }
 
   .cards__header {
-    max-width: 395px; 
+    max-width: 395px;
     aspect-ratio: 395 / 211;
     margin-bottom: 64px;
   }
@@ -70,7 +69,6 @@
     padding: 10px 20px;
   }
 }
-
 
 @media (max-width: 767px) {
   .cards {
@@ -86,18 +84,13 @@
     width: 100%;
     height: auto;
     aspect-ratio: 370 / 198;
-    margin-bottom: 34px; 
+    margin-bottom: 34px;
   }
 
   .cards__grid {
     grid-template-columns: repeat(2, 1fr);
 
-    
     gap: 20px;
     padding: 10px;
-  }
-
-  .cards__item {
-    aspect-ratio: 165 / 184;
   }
 }

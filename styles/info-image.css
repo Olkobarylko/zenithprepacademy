@@ -21,7 +21,7 @@
   font-family: "Bebas Neue Pro", sans-serif;
   font-size: 103px;
   line-height: 1;
-  font-size: 173px;
+  font-size: 120px;
   font-weight: 700;
   text-transform: uppercase;
   color: #0e2242;
@@ -42,9 +42,9 @@
 
 .info-image__subtitle {
   margin: 17px auto 0;
-  max-width: 1133px;
+  max-width: 1333px;
   font-family: "Bebas Neue Pro", Sans-serif;
-  font-size: 80px;
+  font-size: 90px;
   color: #0e2242;
   font-weight: 700;
   line-height: 1;
@@ -207,12 +207,51 @@
     font-size: 100px;
     line-height: 1;
   }
+
+  .info-image__subtitle {
+    max-width: 100%;
+    font-size: 80px;
+  }
+
+  .info-image__quote {
+    font-size: 60px;
+  }
+
+  .info-image__quote-bg {
+    max-width: 330px;
+    top: 19px;
+    left: 6px;
+  }
 }
 
 @media (max-width: 1199px) {
   .info-image__title {
     font-size: 100px;
     line-height: 1;
+  }
+}
+
+@media (width <= 1060px) {
+  .info-image__quote {
+    font-size: 52px;
+  }
+
+  .info-image__quote-bg {
+    max-width: 286px;
+    top: 27px;
+    left: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .info-image__quote-bg {
+    max-width: 249px;
+    top: 32px;
+    left: 28px;
+  }
+
+  .info-image__quote {
+    font-size: 40px;
   }
 }
 
@@ -362,9 +401,9 @@
   }
 
   .info-image__quote-bg {
-    left: 8%;
-    top: 15%;
-    width: 34%;
+    left: 3.5%;
+    top: 9%;
+    width: 38%;
   }
 
   .info-image__answer-label {

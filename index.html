@@ -233,10 +233,10 @@
 
         <div class="cards__grid">
           <div class="cards__item">
-            <img src="./images/badge-1.png" alt="Card 1" class="cards__image" />
+            <img src="./images/list-image-1-fixed.jpg" alt="Card 1" class="cards__image" />
           </div>
           <div class="cards__item">
-            <img src="./images/badge-2.png" alt="Card 2" class="cards__image" />
+            <img src="./images/list-image-2-fixed.jpg" alt="Card 2" class="cards__image" />
           </div>
           <div class="cards__item">
             <img src="./images/badge-3.png" alt="Card 3" class="cards__image" />
@@ -1600,6 +1600,7 @@
     </section>
 
     <section class="cases">
+     <a href="#" class="cta-main cases-top-cta">Book A Free Consultation</a>
       <div class="cases__wrapper">
         <div class="cases__top-container">
           <div class="cases__top-content">
@@ -1614,7 +1615,6 @@
               <p>However, both these students and situations require a very specific strategy and solution to ensure
                 they are accepted into the universities they worked hard for and deserve.</p>
             </div>
-             <a href="#" class="cta-main cases-top-cta">Book A Free Consultation</a>
           </div>
         </div>
         <div class="cases__divider">
@@ -2002,14 +2002,13 @@
 
     <section class="info-blocks">
       <div class="info-blocks__top">
-        <p class="info-blocks__top-lead">
+
+        <p class="info-blocks__top-highlight">
           By JUST purely starting YOUNGER and NOTHING ELSE, this already gives
           your child AT LEAST
-        </p>
-        <p class="info-blocks__top-highlight">
           a <span class="info-blocks__top-accent">5x advantage</span> over
           other students when they fill out the
-          <strong>SAME application</strong> in the 12th grade!
+          <strong>SAME application</strong> in the 12<sup>th</sup> grade!
         </p>
 
         <div class="info-blocks__top-body">
@@ -2139,7 +2138,7 @@
         <div class="benefits__inner">
           <h3 class="benefits__subtitle text-m">Please be aware that these consultations are NOT sales meetings</h3>
           <h2 class="benefits__title">Speak to our Admissions Counseling<br> Department who have a combined 100+ years
-            of <br>experience and careers within the education field</h2>
+            of experience and careers within the education field</h2>
           <div class="benefits__list-figures">
             <div class="benefits__decor">
               <img src="./images/benefits-decor.png" alt="">
@@ -3068,6 +3067,80 @@
       els.forEach((el) => {
         el.textContent = "0 hours";
         io.observe(el);
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
+  })();
+</script>
+<script id="list-stats-counter">
+  (function () {
+    const DURATION = 1400;
+
+    function parseNumberParts(text) {
+      const source = (text || "").toString().trim();
+      const match = source.match(/^(\D*)(\d[\d,\s\u00A0]*)(\D*)$/);
+
+      if (!match) return null;
+
+      const prefix = match[1] || "";
+      const numeric = (match[2] || "").replace(/[\s\u00A0,]/g, "");
+      const suffix = match[3] || "";
+      const target = parseInt(numeric, 10);
+
+      if (!Number.isFinite(target)) return null;
+
+      return { prefix, suffix, target };
+    }
+
+    function animateCounter(el, parts) {
+      const start = performance.now();
+
+      function render(now) {
+        const progress = Math.min((now - start) / DURATION, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const value = Math.floor(parts.target * eased);
+
+        el.textContent = parts.prefix + value + parts.suffix;
+
+        if (progress < 1) {
+          requestAnimationFrame(render);
+        }
+      }
+
+      requestAnimationFrame(render);
+    }
+
+    function init() {
+      const counters = Array.from(document.querySelectorAll(".list__stat-number"));
+      if (!counters.length) return;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          const el = entry.target;
+          if (el.dataset.counterDone === "true") return;
+
+          const parts = parseNumberParts(el.textContent);
+          if (!parts) {
+            el.dataset.counterDone = "true";
+            observer.unobserve(el);
+            return;
+          }
+
+          el.dataset.counterDone = "true";
+          animateCounter(el, parts);
+          observer.unobserve(el);
+        });
+      }, { rootMargin: "0px 0px -15% 0px", threshold: 0.2 });
+
+      counters.forEach((el) => {
+        observer.observe(el);
       });
     }
 

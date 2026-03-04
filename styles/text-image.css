@@ -41,7 +41,7 @@
 }
 
 .ti__bottom {
-  max-width: 1540px;
+  max-width: 80%;
   width: 100%;
   margin: 0 auto;
 }
@@ -84,7 +84,6 @@
 
 .ti__yellow-box p {
   text-align: center;
-  font-family: "EB Garamond", Sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2em;
@@ -129,9 +128,6 @@
     font-size: 22px;
   }
 
-  .ti__bottom {
-    max-width: 1150px;
-  }
 
   .ti__bot__title {
     font-size: 22px;

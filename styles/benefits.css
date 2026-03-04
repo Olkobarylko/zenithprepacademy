@@ -51,6 +51,7 @@
   color: #ffffff;
   line-height: 1;
   text-align: center;
+  max-width: 1250px;
 }
 .benefits__list-figures {
   display: flex;
@@ -174,6 +175,11 @@
   transform: translateX(-50%);
 }
 
+@media (width <= 1700px) {
+  .benefits__title br {
+    display: none;
+  }
+}
 @media (width <= 1600px) {
   .benefits__iframe-wrapper {
     top: -50vw;
@@ -191,9 +197,16 @@
   .benefits__iframe-wrapper {
     top: -55vw;
   }
+  .benefits__text br {
+    display: none;
+  }
 }
 
 @media (width <= 1280px) {
+  .benefits__title br {
+    display: none;
+  }
+
   .benefits__iframe-wrapper {
     position: static;
     width: 100%;

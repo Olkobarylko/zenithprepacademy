@@ -79,6 +79,11 @@
   );
 }
 
+.cta-main.hero-cta {
+  height: 38px;
+  font-size: 15px;
+}
+
 @media (max-width: 1440px) {
   .cta-main.hero-cta,
   .cta-main {
@@ -224,9 +229,9 @@
 
   .cta-main.hero-cta {
     margin-top: 28px;
-    max-width: 315px;
+    max-width: 350px;
     height: 58px;
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .hero__images-absolute {
@@ -284,8 +289,8 @@
   .cta-main.hero-cta {
     margin-top: 28px;
     max-width: 315px;
-    height: 58px;
-    font-size: 18px;
+    height: 38px;
+    font-size: 15px;
   }
 
   .hero__images-absolute {

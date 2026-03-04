@@ -59,32 +59,32 @@
 }
 
 .header__image-item--1 {
-  max-width: 98px;
+  max-width: 80px;
   height: 35px;
 }
 
 .header__image-item--2 {
-  max-width: 40px;
-  height: 40px;
+  max-width: 35px;
+  height: 35px;
 }
 
 .header__image-item--3 {
-  max-width: 90px;
+  max-width: 74px;
   height: 36px;
 }
 
 .header__image-item--4 {
-  max-width: 98px;
+  max-width: 80px;
   height: 35px;
 }
 
 .header__image-item--5 {
-  max-width: 98px;
+  max-width: 80px;
   height: 38px;
 }
 
 .header__image-item--6 {
-  max-width: 98px;
+  max-width: 80px;
   height: 25px;
 }
 
@@ -125,6 +125,7 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 600;
+  min-height: auto;
 }
 
 .header__bottom {
@@ -136,35 +137,71 @@ main {
 }
 
 @media (max-width: 1440px) {
-  .header__image-item--1 {
-    max-width: 58.8px;
-    height: 21px;
-  }
+ .header__image-item--1 {
+    max-width: 81.7px;
+    height: 29.2px;
+}
 
-  .header__image-item--2 {
-    max-width: 24px;
-    height: 24px;
-  }
+.header__image-item--2 {
+    max-width: 33.3px;
+    height: 33.3px;
+}
 
-  .header__image-item--3 {
-    max-width: 54px;
-    height: 21.6px;
-  }
+.header__image-item--3 {
+    max-width: 75.1px;
+    height: 30.0px;
+}
 
-  .header__image-item--4 {
-    max-width: 58.8px;
-    height: 21px;
-  }
+.header__image-item--4 {
+    max-width: 81.7px;
+    height: 29.2px;
+}
 
-  .header__image-item--5 {
-    max-width: 58.8px;
-    height: 22.8px;
-  }
+.header__image-item--5 {
+    max-width: 81.7px;
+    height: 31.7px;
+}
 
-  .header__image-item--6 {
-    max-width: 58.8px;
-    height: 15px;
-  }
+.header__image-item--6 {
+    max-width: 81.7px;
+    height: 20.9px;
+}
+
+.header__image-list {
+  gap: 10px;
+}
+}
+
+@media (max-width: 1280px) {
+.header__image-item--1 {
+    max-width: 76.0px;
+    height: 27.2px;
+}
+
+.header__image-item--2 {
+    max-width: 31.0px;
+    height: 31.0px;
+}
+
+.header__image-item--3 {
+    max-width: 69.9px;
+    height: 27.9px;
+}
+
+.header__image-item--4 {
+    max-width: 76.0px;
+    height: 27.2px;
+}
+
+.header__image-item--5 {
+    max-width: 76.0px;
+    height: 29.5px;
+}
+
+.header__image-item--6 {
+    max-width: 76.0px;
+    height: 19.4px;
+}
 }
 
 @media (max-width: 1199px) {
