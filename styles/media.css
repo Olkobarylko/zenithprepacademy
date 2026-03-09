@@ -1,16 +1,13 @@
-
-
 .media {
   position: relative;
   overflow: hidden;
-  
 }
 
 .media__shape {
   position: absolute;
   inset: 0 auto auto 0;
   width: 100%;
-  
+
   z-index: 0;
 }
 
@@ -42,7 +39,7 @@
   font-family: "Bebas Neue Pro", sans-serif;
   font-weight: 700;
   line-height: 1;
-  font-size:  68px;
+  font-size: 68px;
 }
 
 .media__featured {
@@ -387,7 +384,7 @@
     margin-bottom: 38px;
   }
   .media__title {
-     font-size: 54px;
+    font-size: 54px;
   }
 }
 
@@ -530,8 +527,6 @@
     height: auto;
     aspect-ratio: 514 / 422;
   }
-
-  
 
   .media__bg {
     opacity: 0.12;
